@@ -29,8 +29,8 @@ export function Item({ id }) {
             className="card-image-container"
             layoutId={`card-image-container-${id}`}
           >
-            {/* <img className="card-image" src={`images/${id}.jpg`} alt="" /> */}
-            <img className="card-image" src="https://res.cloudinary.com/oqdesign/image/upload/v1596484562/illustration/berlin/berlin-00_x2a1nm.jpg" alt="" />
+            <img className="card-image" src={`images/${id}.jpg`} alt="" />
+            {/* <img className="card-image" src="https://res.cloudinary.com/oqdesign/image/upload/v1596484562/illustration/berlin/berlin-00_x2a1nm.jpg" alt="" /> */}
 
           </motion.div>
           <motion.div
