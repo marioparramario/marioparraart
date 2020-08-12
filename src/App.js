@@ -3,6 +3,7 @@ import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { Header } from "./components/Header";
 import { Item } from "./Item";
 import { List } from "./List";
+// import { About } from "./pages/about";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function Store({ match }) {
@@ -21,13 +22,13 @@ function Store({ match }) {
 
 export default function App() {
   return (
-    <div className="container">
+    
       <AnimateSharedLayout type="crossfade">
         <Header />
         <Router>
+          {/* <Route exact path="/" component={About} /> */}
           <Route path={["/:id", "/"]} component={Store} />
         </Router>
       </AnimateSharedLayout>
-    </div>
   );
 }

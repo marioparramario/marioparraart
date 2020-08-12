@@ -19,11 +19,10 @@ export function Item({ id }) {
       >
         <Link to="/" />
       </motion.div>
-      <div className="card-content-container open">
+      <div className="card-content-container flex-vertical open">
         <motion.div
-
           transition={{ duration: 0.7}}
-          className="card-content" layoutId={`card-container-${id}`}>
+          className="card-content container" layoutId={`card-container-${id}`}>
           <motion.div
             transition={{ duration: 0.7}}
             className="card-image-container"
