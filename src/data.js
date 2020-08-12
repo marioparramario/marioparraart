@@ -65,4 +65,4 @@ export const items = [
   }
 ];
 
-export const openSpring = { type: "spring", stiffness: 200, damping: 30 };
+export const openSpring = { type: "spring", stiffness: 2000, damping: 3000 };

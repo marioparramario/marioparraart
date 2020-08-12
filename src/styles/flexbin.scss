@@ -34,7 +34,8 @@ $flexbin-space-phone: $flexbin-space !default;
         margin: $space / 2;
         flex-grow: 1;
 
-        > img {
+        // > img {
+        img {
             height: $row-height;
             object-fit: cover;
             max-width: 100%;

@@ -12,16 +12,20 @@ export function Item({ id }) {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0, transition: { duration: 0.15 } }}
-        transition={{ duration: 0.2, delay: 0.15 }}
+        exit={{ opacity: 0, transition: { duration: 1 } }}
+        transition={{ duration: 1, delay: 0.15 }}
         style={{ pointerEvents: "auto" }}
         className="overlay"
       >
         <Link to="/" />
       </motion.div>
       <div className="card-content-container open">
-        <motion.div className="card-content" layoutId={`card-container-${id}`}>
+        <motion.div
+
+          transition={{ duration: 1.5}}
+          className="card-content" layoutId={`card-container-${id}`}>
           <motion.div
+            transition={{ duration: 1.5}}
             className="card-image-container"
             layoutId={`card-image-container-${id}`}
           >
@@ -30,6 +34,7 @@ export function Item({ id }) {
 
           </motion.div>
           <motion.div
+            transition={{ duration: 1.5}}
             className="title-container"
             layoutId={`title-container-${id}`}
           >
