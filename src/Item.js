@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { items } from "./data";
 
 export function Item({ id }) {
-  const { category, title } = items.find(item => item.id === id);
+  const { title } = items.find(item => item.id === id);
 
   return (
     <>
@@ -22,23 +22,21 @@ export function Item({ id }) {
       <div className="card-content-container open">
         <motion.div
 
-          transition={{ duration: 1.5}}
+          transition={{ duration: 0.7}}
           className="card-content" layoutId={`card-container-${id}`}>
           <motion.div
-            transition={{ duration: 1.5}}
+            transition={{ duration: 0.7}}
             className="card-image-container"
             layoutId={`card-image-container-${id}`}
           >
             <img className="card-image" src={`images/${id}.jpg`} alt="" />
-            {/* <img className="card-image" src="https://res.cloudinary.com/oqdesign/image/upload/v1596484562/illustration/berlin/berlin-00_x2a1nm.jpg" alt="" /> */}
 
           </motion.div>
           <motion.div
-            transition={{ duration: 1.5}}
+            transition={{ duration: 0.7}}
             className="title-container"
             layoutId={`title-container-${id}`}
           >
-            <span className="category">{category}</span>
             <h2>{title}</h2>
           </motion.div>
           <motion.div className="content-container" animate>

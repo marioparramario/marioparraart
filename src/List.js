@@ -3,10 +3,12 @@ import { items } from "./data";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./styles/flexbin.scss";
-import ProgressiveImage from "react-progressive-image";
-function Card({ id, title, category, theme }) {
+// import ProgressiveImage from "react-progressive-image";
+function Card({ id, title, theme }) {
   return (
-    <li className={`card ${theme}`}>
+    <div 
+    // layoutId={`card-container-${id}`}
+    className={`card ${theme}`}>
       <div className="card-content-container">
         <motion.div className="card-content" layoutId={`card-container-${id}`}>
           <motion.div
@@ -14,19 +16,17 @@ function Card({ id, title, category, theme }) {
             layoutId={`card-image-container-${id}`}
           >
             <img className="card-image" src={`images/${id}.jpg`} alt="" />
-            {/* <img className="card-image" src="https://res.cloudinary.com/oqdesign/image/upload/v1596484562/illustration/berlin/berlin-00_x2a1nm.jpg" alt="" /> */}
           </motion.div>
           <motion.div
             className="title-container"
             layoutId={`title-container-${id}`}
-          >
-            <span className="category">{category}</span>
-            <h2>{title}</h2>
+          >           
+          <h2>{title}</h2>
           </motion.div>
         </motion.div>
       </div>
       <Link to={id} className={`card-open-link`} />
-    </li>
+    </div>
   );
 }
 
@@ -45,8 +45,8 @@ export function List({ selectedId }) {
         )}
       </ProgressiveImage> */}
 
-      <div className="flexbin flexbin-margin">
-        <div>
+      {/* <div className="flexbin flexbin-margin"> */}
+        {/* <div>
           <a>
             <img src="https://res.cloudinary.com/oqdesign/image/upload/v1596484575/illustration/chile-calling/chile-calling-00_ntlrat.jpg" />
           </a>
@@ -55,18 +55,18 @@ export function List({ selectedId }) {
           <a>
             <img src="https://res.cloudinary.com/oqdesign/image/upload/v1596484576/illustration/delivery-hero/delivery-hero-00_op78ya.jpg" />
           </a>
-        </div>
-        <div>
-          <a>
+        </div> */}
+        {/* <div>
+          <div>
             <img src="https://res.cloudinary.com/oqdesign/image/upload/v1596484598/illustration/mapuches/mapuches-00_dc4ejg.jpg" />
-          </a>
+          </div>
         </div>
         <div>
-          <a>
+          <div>
             <img src="https://res.cloudinary.com/oqdesign/image/upload/v1596484593/illustration/forastero/forastero-00_qa40r5.jpg" />
-          </a>
-        </div>
-        <div>
+          </div>
+        </div> */}
+        {/* <div>
           <a>
             <img src="https://res.cloudinary.com/oqdesign/image/upload/v1596484591/illustration/foodora/foodora-00_iqlo0h.jpg" />
           </a>
@@ -95,14 +95,14 @@ export function List({ selectedId }) {
           <a>
             <img src="https://res.cloudinary.com/oqdesign/image/upload/v1596484596/illustration/innovation/innovation-00_jfoq2d.jpg" />
           </a>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
-      <ul className="card-list">
+      <div className="card-list flexbin flexbin-margin">
         {items.map(card => (
           <Card key={card.id} {...card} isSelected={card.id === selectedId} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
