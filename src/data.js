@@ -3,7 +3,7 @@ export const items = [
   {
     id: "c",
     category: "Pizza",
-    title: "5 Food Apps Delivering the Best of Your City",
+    title: "Boolean Academy",
     pointOfInterest: 80,
     backgroundColor: "#814A0E"
   },
@@ -11,7 +11,7 @@ export const items = [
   {
     id: "f",
     category: "How to",
-    title: "Arrange Your Apple Devices for the Gram",
+    title: "Berlin Victorinox",
     pointOfInterest: 120,
     backgroundColor: "#959684"
   },

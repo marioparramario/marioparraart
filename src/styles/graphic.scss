@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+.graphic {
+  background: $black;
+  * {
+    color: white;
+  }
+  .content-wrapper {
+    padding-top: 2px;
+  }
+
+  .grid-item-caption {
+    color: white;
+  }
+  .footer {
+    background: $blackest;
+  }
+}
+
+@media (max-width: $desktop) {}
+@media (max-width: $tablet) {}

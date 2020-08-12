@@ -1,0 +1,105 @@
+@import "variables.scss";
+
+.footer {
+  color: $black;
+  background: white;
+  padding: 60px 50px;
+  z-index: 1;
+  span {
+    font-size: 0.7rem;
+    color: $black;
+  }
+  a {
+    color: $black;
+    font-size: 1.2rem;
+  }
+  .email {
+    margin-right: 100px;
+  }
+  .social {
+    a {
+      font-size: 0.7rem;
+      padding: 0 0.7rem;
+    }
+  }
+}
+@media (max-width: $desktop-large) {
+  .footer {
+    padding: 54px 40px;
+  }
+}
+@media (max-width: $desktop) {}
+@media (max-width: $tablet) {
+  .footer {
+    padding: 50px 40px;
+    span {
+      font-size: 0.6rem;
+    }
+    a {
+      font-size: 1rem;
+    }
+    .email {
+      margin-right: 40px;
+    }
+    .social {
+      align-self: flex-end;
+      a {
+        font-size: 0.65rem;
+      }
+    }
+  }
+}
+@media (max-width: $tablet-small)  {
+  .footer {
+    padding: 40px 30px;
+    .info-container {
+      flex-direction: column;
+    }
+    .email {
+      margin-bottom: 12px;
+    }
+    .social {
+      align-self: center;
+      align-items: flex-end;
+      flex-direction: column;
+      a {
+        &::before, &::after {
+          display: none;
+        }
+        &:nth-of-type(2) {
+          margin: 6px 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $phone) {
+  .footer {
+    padding: 20px;
+    flex-direction: column;
+    .social {
+      flex-direction: row;
+      margin-top: 20px;
+      align-self: start;
+      a {
+        &:nth-of-type(1) {
+          padding-left: 0;
+        }
+        &:nth-of-type(2) {
+          margin: 0;
+        }
+        padding: 0 10px;
+        &::before, &::after {
+          display: block;
+        }
+      }
+    }
+    .email {
+      margin-bottom: 8px;
+      margin-right: 0;
+    }
+    span {
+      font-size: 0.52rem;
+    }
+  }
+}

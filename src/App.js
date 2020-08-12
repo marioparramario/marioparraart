@@ -1,6 +1,6 @@
 import React from "react";
 import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
-import { Header } from "./Header";
+import { Header } from "./components/Header";
 import { Item } from "./Item";
 import { List } from "./List";
 import { BrowserRouter as Router, Route } from "react-router-dom";

@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./styles.css";
+import "./styles/styles.scss";
+// import "./styles/style.scss";
+import "./styles/normalize.scss";
+import "./styles/layout.scss";
 
 import App from "./App";
 
