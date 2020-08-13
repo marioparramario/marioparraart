@@ -8,7 +8,7 @@ export const Card = ({ id, title, theme }) => {
       // layoutId={`card-container-${id}`}
       className={`card ${theme}`}>
       <div className="card-content-container">
-        <motion.div className="card-content" layoutId={`card-container-${id}`}>
+        <motion.div className="card-content">
           <motion.div
             className="card-image-container"
             layoutId={`card-image-container-${id}`}

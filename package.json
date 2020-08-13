@@ -10,6 +10,7 @@
     "node-sass": "^4.14.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
+    "react-justified-layout": "^0.1.0",
     "react-lorem-ipsum": "1.4.4",
     "react-progressive-image": "^0.6.0",
     "react-router-dom": "5.1.2",

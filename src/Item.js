@@ -12,7 +12,7 @@ export function Item({ id }) {
     // this.targetElement = document.querySelector(".card-content-container");
     disableBodyScroll(document.querySelector(".card-content-container"))
   },[]);
-  console.log(id);
+  console.log("working?");
   return (
     
     <>
@@ -25,11 +25,10 @@ export function Item({ id }) {
         className="overlay"
       >
         <Link to="/" />
-      </motion.div>
-      <div className="card-content-container flex-vertical open">
+        <div className="card-content-container flex-vertical open">
         <motion.div
           transition={{ duration: 3 }}
-          className="card-content container" layoutId={`card-container-${id}`}>
+          className="card-content container">
           <motion.div
             transition={{ duration: 3 }}
             className="card-image-container"
@@ -54,6 +53,8 @@ export function Item({ id }) {
           </motion.div>
         </motion.div>
       </div>
+      </motion.div>
+      
     </>
   );
 }

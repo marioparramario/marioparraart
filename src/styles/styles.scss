@@ -111,13 +111,16 @@
 }
 
 .card-content-container.open {
-  top: 120px;
+  top: 180px;
   left: 0;
   right: 0;
   position: fixed;
+  position: absolute;
   z-index: 1;
-  overflow: hidden;
-  padding: 40px 0;
+  // overflow: hidden;
+  overflow: scroll;
+  overflow: auto;
+  // padding: 40px 0;
 }
 
 // .card-content {
