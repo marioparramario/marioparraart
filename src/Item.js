@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { LoremIpsum } from "react-lorem-ipsum";
 import { Link } from "react-router-dom";
 import { items } from "./data";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 export function Item({ id }) {
   const { title } = items.find(item => item.id === id);
-
+  useEffect(() => {
+    // document.title = `You clicked ${count} times`;
+    // this.targetElement = document.querySelector(".card-content-container");
+    disableBodyScroll(document.querySelector(".card-content-container"))
+  },[]);
+  console.log(id);
   return (
+    
     <>
       <motion.div
         initial={{ opacity: 0 }}
@@ -21,10 +28,10 @@ export function Item({ id }) {
       </motion.div>
       <div className="card-content-container flex-vertical open">
         <motion.div
-          transition={{ duration: 3}}
+          transition={{ duration: 3 }}
           className="card-content container" layoutId={`card-container-${id}`}>
           <motion.div
-            transition={{ duration: 3}}
+            transition={{ duration: 3 }}
             className="card-image-container"
             layoutId={`card-image-container-${id}`}
           >
@@ -32,7 +39,7 @@ export function Item({ id }) {
 
           </motion.div>
           <motion.div
-            transition={{ duration: 3}}
+            transition={{ duration: 3 }}
             className="title-container"
             layoutId={`title-container-${id}`}
           >

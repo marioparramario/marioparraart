@@ -1,7 +1,20 @@
 @import "variables.scss";
-
+body {
+  overflow: auto;
+  font-family: $sofia;
+  font-weight: 700;
+  font-style: normal;
+  background: white;
+  text-rendering: optimizeLegibility;
+  @include font-smoothing($value: antialiased);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
 .title-container {
-  display: none;
+  position: absolute;
+  top: 0;
+  color: white;
 }
 .container {
   position: relative;
@@ -36,39 +49,15 @@ img {
   width: 100%;
 }
 
-// .card-content-container {
-
-// top: 0;
-// left: 0;
-// right: 0;
-// position: fixed;
-// z-index: 1;
-// overflow: hidden;
+// .card-content {
+//   display: inline-block;
 // }
-
-
-// .card-content-container.open {
-//   position: fixed;
-//   display: flex;
-//   align-items: center;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   // padding: @qquad;
-//   overflow-y: auto;
-//   background: rgba(0, 0, 0, 0.7);
-//   // z-index: @zindex-modal;
-
-
+// .card-image-container {
+//   display: inline-block;
 // }
 // .card-content {
-//   &__content {
-//     width: 900px;
-//     margin: auto;
-//     max-width: 90%;
-//     // padding: @quad;
-//     background: white;
-//     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+//   display: grid;
 // }
+// .card-image-container {
+//   display: inline-block;
 // }

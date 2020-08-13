@@ -3,13 +3,13 @@ import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { Header } from "./components/Header";
 import { Item } from "./Item";
 import { List } from "./List";
-// import { About } from "./pages/about";
+import { About } from "./pages/about";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function Store({ match }) {
   let { id } = match.params;
   const imageHasLoaded = true;
-
+  console.log(id);
   return (
     <>
       <List selectedId={id} />
@@ -26,8 +26,9 @@ export default function App() {
       <AnimateSharedLayout type="crossfade">
         <Header />
         <Router>
-          {/* <Route exact path="/" component={About} /> */}
-          <Route path={["/:id", "/"]} component={Store} />
+          <Route path="/me/about" component={About} />
+          <Route path={["/illustration/:id", "/"]} component={Store} />
+          
         </Router>
       </AnimateSharedLayout>
   );
