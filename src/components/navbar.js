@@ -59,7 +59,7 @@ function Navbar() {
             <a href="/" onClick={onClickMenuItem}>
               Work
             </a>
-            <a href="/about" onClick={onClickMenuItem} className={menuState.about}>
+            <a href="/me/about" onClick={onClickMenuItem} className={menuState.about}>
             Contact
             </a>
             <a href="/experiment" onClick={onClickMenuItem} className={menuState.about}>
