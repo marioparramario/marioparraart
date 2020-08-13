@@ -5,7 +5,7 @@ import { Item } from "./Item";
 import { List } from "./List";
 import { About } from "./pages/about";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+// import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 function Store({ match }) {
   let { id } = match.params;
