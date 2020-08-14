@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./styles/styles.scss";
-// import "./styles/style.scss";
+import App from "./App";
 import "./styles/normalize.scss";
 import "./styles/layout.scss";
+import "./styles/styles.scss";
 import "./styles/index.scss";
-import App from "./App";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(

@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
 import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
-import { Header } from "./components/Header";
-import { Item } from "./Item";
-import { List } from "./List";
+import { Navbar } from "./components/Navbar";
+import { Item } from "./components/Item";
+import { List } from "./components/List";
 import { About } from "./pages/about";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
@@ -31,7 +31,7 @@ export default function App() {
   return (
     
       <AnimateSharedLayout type="crossfade">
-        <Header />
+        <Navbar />
         <Router>
           <Route path={["/:id", "/"]} component={Store} />
         </Router>

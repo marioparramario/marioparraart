@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { LoremIpsum } from "react-lorem-ipsum";
 import { Link } from "react-router-dom";
-import { items } from "./data";
+import { items } from "../data/data";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 export function Item({ id }) {
