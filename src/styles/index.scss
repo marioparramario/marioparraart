@@ -102,3 +102,20 @@ h2 {
     text-decoration: underline;
   }
 }
+
+.switcher {
+  position: relative;
+  width: 100%;
+  // path {
+  //   fill: transparent !important;
+  // }
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  z-index: 9;
+}

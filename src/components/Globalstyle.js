@@ -19,4 +19,11 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.text};
   }
+  .icon-path {
+    fill: ${({ theme }) => theme.body};
+    stroke: ${({ theme }) => theme.text};
+  }
+  .icon-path-alt {
+    fill: ${({ theme }) => theme.text};
+  }
   `
