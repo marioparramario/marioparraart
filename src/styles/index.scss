@@ -5,6 +5,7 @@ body {
   font-weight: 700;
   font-style: normal;
   background: white;
+  color: $black;
   text-rendering: optimizeLegibility;
   @include font-smoothing($value: antialiased);
   -webkit-font-smoothing: antialiased;
@@ -58,22 +59,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-// img {
-//   width: 100%;
-// }
-
-// .card-content {
-//   display: inline-block;
-// }
-// .card-image-container {
-//   display: inline-block;
-// }
-// .card-content {
-//   display: grid;
-// }
-// .card-image-container {
-//   display: inline-block;
-// }
 
 .content-container {
   overflow-y: auto;
@@ -93,8 +78,27 @@ body {
 .card-content {
   display: grid;
 }
-// .react-photo-gallery--gallery {
-//   img {
-//     width: auto;
-//   }
-// }
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+h1 {
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.welcome {
+  max-width: 800px;
+  margin-bottom: 50px;
+  a {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+}

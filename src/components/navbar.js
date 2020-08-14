@@ -1,5 +1,4 @@
 import * as React from "react";
-// import { Avatar } from "react-lorem-ipsum";
 import Logo from "./Logo";
 import "../styles/navbar.scss";
 
@@ -10,7 +9,6 @@ export const Navbar = () => (
       className="logo">
       Logo Mario Parra
       <Logo />
-      
     </a>
 
     <div className="link flex justify-end">
