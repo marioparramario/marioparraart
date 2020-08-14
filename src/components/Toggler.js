@@ -2,16 +2,9 @@ import React from "react";
 import { func, string } from "prop-types";
 // import Switcher from "./Switcher";
 import styled from "styled-components";
+import { useCycle } from "framer-motion";
+import { motion } from "framer-motion";
 
-// const Button = styled.div`
-//   width: 30px;
-//   height: 30px;
-//   position: absolute;
-//   top: 120px;
-//   right: 50px;
-//   z-index: 9;
-//   }
-// `;
 const SVG = ({
   style = {},
   width = "100%",
@@ -34,14 +27,27 @@ const SVG = ({
 
 
 const Toggle = ({ theme, toggleTheme }) => {
+  const [animate, cycle] = useCycle(
+    {rotate: 0 },
+    {rotate: 180 }
+  );
   return (
+
     <>
-      <div className="button">
-        <a onClick={toggleTheme}>
-        <SVG />
-        {/* <switcherIcon /> */}
-        </a>
-      </div>
+      <motion.div
+      animate={animate}
+      transition={{
+        ease: "linear",
+        duration: 0.5
+       }}
+      onTap={() => cycle()}
+      className="button">
+        <div 
+        className="flex"
+        onClick={toggleTheme}>
+          <SVG />
+        </div>
+      </motion.div>
     </>
   );
 

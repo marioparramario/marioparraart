@@ -4,7 +4,7 @@ body {
   font-family: $sofia;
   font-weight: 700;
   font-style: normal;
-  background: white;
+  // background: white;
   color: $black;
   text-rendering: optimizeLegibility;
   @include font-smoothing($value: antialiased);
@@ -24,41 +24,37 @@ body {
   width: 90%;
 }
 
-.overlay {
-  z-index: 1;
-  position: fixed;
-  background: rgba(255, 255, 255, 0.8);
-  // will-change: opacity;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  // transform: translateX(-50%);
-  width: 100%;
-  // max-width: 990px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  // padding: 1rem;
-  background-color: rgba(247, 244, 253, 0.2);
-  z-index: 4000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .overlay {
+//   z-index: 1;
+//   position: fixed;
+//   background: rgba(255, 255, 255, 0.8);
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(247, 244, 253, 0.2);
+//   z-index: 4000;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-.overlay a {
-  display: block;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100vw;
-  left: 50%;
-  transform: translateX(-50%);
-}
+// .overlay a {
+//   display: block;
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   width: 100vw;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
 
 .content-container {
   overflow-y: auto;
@@ -95,8 +91,10 @@ h2 {
 }
 
 .welcome {
-  max-width: 800px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  .text {
+    max-width: 800px;
+  }
   a {
     font-size: 20px;
     text-decoration: underline;
@@ -106,16 +104,52 @@ h2 {
 .switcher {
   position: relative;
   width: 100%;
-  // path {
-  //   fill: transparent !important;
-  // }
 }
 
 .button {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 120px;
-  right: 50px;
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
   z-index: 9;
+  cursor: pointer;
+  div {
+    width: 100%;
+    height: 100%;
+  }
+}
+span, .mono {
+  font-family: $roboto;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.social {
+  z-index: 1;
+  a {
+    position: relative;
+    font-size: 13px;
+    padding: 0 12px;
+    text-decoration: none;
+    &:first-child {
+      padding-left: 0;
+      &::before {
+        content: none;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: auto;
+      right: 0;
+      bottom: auto;
+      left: 0;
+      width: 1px;
+      height: 80%;
+    }
+  }
+}
+.contact {
+  padding-top: 30px;
 }

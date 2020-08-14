@@ -35,22 +35,22 @@ function Store({ match }) {
 export default function App() {
   const [theme, themeToggler, mountedComponent] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-  if(!mountedComponent) return <div/>
+  if (!mountedComponent) return <div />
 
 
   return (
-<ThemeProvider theme={themeMode}>
-<>
-      <GlobalStyles/>
+    <ThemeProvider theme={themeMode}>
+      <>
+        <GlobalStyles />
 
-    <AnimateSharedLayout type="crossfade">
-      <Navbar />
-      <Toggle theme={theme} toggleTheme={themeToggler} />
-      <Router>
-        <Route path={["/:id", "/"]} component={Store} />
-      </Router>
-    </AnimateSharedLayout>
-    </>
+        <AnimateSharedLayout type="crossfade">
+          <Navbar />
+          <Toggle theme={theme} toggleTheme={themeToggler} />
+          <Router>
+            <Route path={["/:id", "/"]} component={Store} />
+          </Router>
+        </AnimateSharedLayout>
+      </>
     </ThemeProvider>
   );
 }

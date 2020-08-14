@@ -12,7 +12,7 @@ export function List({ selectedId }) {
     <main className={`content-wrapper flex-vertical ${selectedId ? 'illustration-open' : ''}`}>
       <div className="container">
       <Welcome />
-        <JustifiedGrid images={Photos} rows={3} maxRowHeight={320} gutter={10} className="justified-grid">
+        <JustifiedGrid images={Photos} rows={3} maxRowHeight={420} gutter={10} className="justified-grid">
           {processedImages => (
             <React.Fragment>
               {processedImages.map((image, i) => {

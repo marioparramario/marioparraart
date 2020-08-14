@@ -18,7 +18,6 @@ export const Navbar = () => (
       <a href="/about">
       contact
       </a>
-
     </div>
   </div>
 </nav>

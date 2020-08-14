@@ -27,13 +27,26 @@
     // }
   }
   .link {
+    &-container {
+      position: relative;
+      
+    }
     a {
-      margin-left: 64px;
+      // margin-left: 64px;
+      margin-left: 44px;
       font-size: 20px;
       cursor: pointer;
       // color: $black;
       position: relative;
     }
+    // .outline {
+    //   position: absolute;
+    //   background: pink;
+    //   height: 10px;
+    //   width: 100%;
+    //   bottom: -20px;
+    //   left: 0;
+    // }
   }
   .menu {
     height: 40px;
