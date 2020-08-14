@@ -2,13 +2,12 @@
 
 .navbar {
   position: fixed;
-  background: white;
+  // background: white;
   height: 96px;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 991;
-  background: white;
   .wrapper {
     padding: 0 50px;
     width: 100%;
@@ -20,19 +19,19 @@
     white-space: nowrap;
     overflow: hidden;
     font-size: 0;
-    svg {
-      width: 100%;
-      path, polygon {
-        fill: $black;
-      }
-    }
+    // svg {
+    //   width: 100%;
+    //   path, polygon {
+    //     fill: $black;
+    //   }
+    // }
   }
   .link {
     a {
       margin-left: 64px;
       font-size: 20px;
       cursor: pointer;
-      color: $black;
+      // color: $black;
       position: relative;
     }
   }
