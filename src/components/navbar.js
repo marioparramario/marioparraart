@@ -13,10 +13,10 @@ export const Navbar = () => (
 
     <div className="link flex justify-end">
       <a href="/" >
-        Work
+        work
       </a>
       <a href="/about">
-      Contact
+      contact
       </a>
 
     </div>
