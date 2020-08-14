@@ -9,19 +9,21 @@ import { photos } from "./components/photos";
 
 import JustifiedGrid from 'react-justified-grid';
 import mockData from './mockData';
+import { Welcome } from "./components/welcome";
 
 export function List({ selectedId }) {
 
   return (
     <main className={`content-wrapper flex-vertical ${selectedId ? 'illustration-open' : ''}`}>
       <div className="container">
+      <Welcome />
       {/* <JustifiedGrid
       images={photos}
       rows={3}
       maxRowHeight={320}
       gutter={10}/>
       <hr /> */}
-        <JustifiedGrid images={photos} rows={3} maxRowHeight={320}>
+        <JustifiedGrid images={photos} rows={3} maxRowHeight={320} gutter={10} className="justified-grid">
           {processedImages => (
             <React.Fragment>
               {processedImages.map((image, i) => {
