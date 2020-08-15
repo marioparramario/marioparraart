@@ -12,7 +12,7 @@ export function List({ selectedId }) {
     <main className={`content-wrapper flex-vertical ${selectedId ? 'illustration-open' : ''}`}>
       <div className="container">
       <Welcome />
-        <JustifiedGrid images={Photos} rows={3} maxRowHeight={420} gutter={10} className="justified-grid">
+        <JustifiedGrid images={Photos} rows={3} maxRowHeight={420} gutter={16} className="justified-grid">
           {processedImages => (
             <React.Fragment>
               {processedImages.map((image, i) => {
@@ -33,13 +33,12 @@ export function List({ selectedId }) {
             </React.Fragment>
           )}
         </JustifiedGrid>
-      {/* <Gallery photos={photos} /> */}
 
-        <div className="card-list flexbin flexbin-margin">
+        {/* <div className="card-list flexbin flexbin-margin">
           {items.map(card => (
             <Card key={card.id} {...card} isSelected={card.id === selectedId} />
           ))}
-        </div>
+        </div> */}
       </div>
     </main>
   );

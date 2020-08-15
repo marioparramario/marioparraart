@@ -2,7 +2,6 @@
 body {
   overflow: auto;
   font-family: $sofia;
-  font-weight: 700;
   font-style: normal;
   // background: white;
   color: $black;
@@ -78,9 +77,11 @@ body {
 a {
   color: $black;
   text-decoration: none;
+  font-weight: $bold;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-weight: $bold;
 }
 h1 {
   font-size: 46px;
@@ -89,26 +90,20 @@ h1 {
 h2 {
   font-size: 26px;
 }
-
-.welcome {
-  margin-bottom: 60px;
-  .text {
-    max-width: 800px;
-  }
-  a {
-    font-size: 20px;
-    text-decoration: underline;
-  }
+p {
+  font-size: 20px;
+  font-weight: $medium;
 }
 
-.switcher {
+
+.toggle-icon {
   position: relative;
   width: 100%;
 }
 
 .button {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   position: fixed;
   bottom: 40px;
   right: 20px;
@@ -125,31 +120,4 @@ span, .mono {
   text-transform: uppercase;
   font-weight: normal;
 }
-.social {
-  z-index: 1;
-  a {
-    position: relative;
-    font-size: 13px;
-    padding: 0 12px;
-    text-decoration: none;
-    &:first-child {
-      padding-left: 0;
-      &::before {
-        content: none;
-      }
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      top: auto;
-      right: 0;
-      bottom: auto;
-      left: 0;
-      width: 1px;
-      height: 80%;
-    }
-  }
-}
-.contact {
-  padding-top: 30px;
-}
+

@@ -1,6 +1,5 @@
 import React from "react";
 import { func, string } from "prop-types";
-// import Switcher from "./Switcher";
 import styled from "styled-components";
 import { useCycle } from "framer-motion";
 import { motion } from "framer-motion";
@@ -8,7 +7,7 @@ import { motion } from "framer-motion";
 const SVG = ({
   style = {},
   width = "100%",
-  className = "switcher",
+  className = "toggle-icon",
   viewBox = "0 0 20 20",
 }) => (
     <svg
@@ -38,7 +37,7 @@ const Toggle = ({ theme, toggleTheme }) => {
       animate={animate}
       transition={{
         ease: "linear",
-        duration: 0.5
+        duration: 0.3
        }}
       onTap={() => cycle()}
       className="button">

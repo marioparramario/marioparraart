@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+.social {
+  z-index: 1;
+  a {
+    position: relative;
+    font-size: 13px;
+    padding: 0 12px;
+    text-decoration: none;
+    &:first-child {
+      padding-left: 0;
+      &::before {
+        content: none;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: auto;
+      right: 0;
+      bottom: auto;
+      left: 0;
+      width: 1px;
+      height: 80%;
+    }
+  }
+}

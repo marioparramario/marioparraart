@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+.footer {
+  // background: red;
+  padding: 50px;
+  &-container {
+    width: 100%;
+  }
+  &-info {
+    span {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    a {
+      font-size: 20px;
+    }
+  }
+  .social a {
+    font-size: 12px;
+  }
+}

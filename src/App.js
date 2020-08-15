@@ -5,9 +5,10 @@ import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { useDarkMode } from "./components/useDarkMode"
 import { GlobalStyles } from "./components/Globalstyle";
 import { lightTheme, darkTheme } from "./components/Themes"
-import Toggle from "./components/Toggler"
+import Toggle from "./components/Toggle"
 
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 import { Item } from "./components/Item";
 import { List } from "./components/List";
 import { About } from "./pages/about";
@@ -45,10 +46,11 @@ export default function App() {
 
         <AnimateSharedLayout type="crossfade">
           <Navbar />
-          <Toggle theme={theme} toggleTheme={themeToggler} />
           <Router>
             <Route path={["/:id", "/"]} component={Store} />
           </Router>
+          <Toggle theme={theme} toggleTheme={themeToggler} />
+          <Footer />
         </AnimateSharedLayout>
       </>
     </ThemeProvider>

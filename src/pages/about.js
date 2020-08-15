@@ -8,7 +8,7 @@ const About = props => (
 
     <div className="container">
       <div className="about-me flex justify-end align-center">
-        <img src="https://res.cloudinary.com/oqdesign/image/upload/v1596484688/about/about_fllzee.jpg"></img>
+        <img src="https://res.cloudinary.com/oqdesign/image/upload/v1597508883/about/about-vertical_jloieq.jpg"></img>
       </div>
       <div className="text">
         <h1>Hello There!</h1>

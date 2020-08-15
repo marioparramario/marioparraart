@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+.welcome {
+  margin-bottom: 60px;
+  .text {
+    max-width: 800px;
+  }
+  &-info {
+    padding-top: 30px;
+  }
+}
