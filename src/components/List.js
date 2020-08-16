@@ -13,7 +13,7 @@ export function List({ selectedId }) {
   return (
     <main className={`content-wrapper flex-vertical ${selectedId ? 'illustration-open' : ''}`}>
       <div className="container">
-      <Welcome />
+        <Welcome />
         <JustifiedGrid images={Photos} rows={3} maxRowHeight={420} gutter={16} className="justified-grid">
           {processedImages => (
             <React.Fragment>
@@ -21,27 +21,28 @@ export function List({ selectedId }) {
                 const { alt, src, width, height, left, top } = image;
                 const item = Photos[index];
                 return (
-                  <div
-                    // layoutId={`card-container-${item.path}`}
-                      className={`card ${theme}`}>
-                    <div className="card-content-container">
-                      <motion.div className="card-content">
-                        <motion.div
-                      className="card-image-container"
-                          layoutId={`card-image-container-${item.path}`}
-                        >
-                          <img className="card-image" src={src} width={width} height={height} alt={alt} />
-                        </motion.div>
-                        <motion.div
-                          className="title-container"
-                          layoutId={`title-container-${item.path}`}
-                        >
-                          <h2>{item.title}</h2>
-                        </motion.div>
-                      </motion.div>
-                    </div>
-                    <Link to={`${item.path}`} className={`card-open-link`} />
+                  
+                  <div className="something">
+                    <img src={src} width={width} height={height} alt={alt} />
                   </div>
+
+                  // <div className="something">
+                  //   <motion.div
+
+                  //     layoutId={`card-image-container-${item.path}`}
+                  //   >
+                  //     <img src={src} width={width} height={height} alt={alt} />
+                  //   </motion.div>
+                  //   <motion.div
+                  //   className="titled"
+
+                  //     layoutId={`title-container-${item.path}`}
+                  //   >
+                  //     <h2>{item.title}</h2>
+                  //   </motion.div>
+                  //   <Link to={`${item.path}`} className={`card-open-link`} />
+                  // </div>
+
                 );
               })}
             </React.Fragment>
