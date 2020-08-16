@@ -26,32 +26,32 @@ export function Item({ id }) {
       >
         <Link to="/" />
         <div className="card-content-container flex-vertical open">
-        <motion.div
+        {/* <motion.div
           transition={{ duration: 3 }}
-          className="card-content container">
+          className="card-content container"> */}
           <motion.div
             transition={{ duration: 3 }}
-            className="card-image-container"
+            className="something"
             layoutId={`card-image-container-${id}`}
           >
             <img className="card-image" src={src} alt="" />
 
           </motion.div>
-          <motion.div
+          {/* <motion.div
             transition={{ duration: 3 }}
             className="title-container"
             layoutId={`title-container-${id}`}
           >
             <h2>{title}</h2>
-          </motion.div>
-          <motion.div className="content-container" animate>
+          </motion.div> */}
+          {/* <motion.div className="content-container" animate> */}
             <LoremIpsum
               p={6}
               avgWordsPerSentence={6}
               avgSentencesPerParagraph={4}
             />
-          </motion.div>
-        </motion.div>
+          {/* </motion.div> */}
+        {/* </motion.div> */}
       </div>
       </motion.div>
       
