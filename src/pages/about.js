@@ -7,13 +7,14 @@ const About = props => (
   <section className="about flex-vertical">
 
     <div className="container">
-      <div className="about-me flex justify-end align-center">
-        <img src="https://res.cloudinary.com/oqdesign/image/upload/v1597508883/about/about-vertical_jloieq.jpg"></img>
-      </div>
-      <div className="text">
+      <div className="about-intro flex justify-center align-center">
+        <img src="https://res.cloudinary.com/oqdesign/image/upload/v1597511075/about/about-vertical-alt_zzud4w.jpg"></img>
+        <div className="about-intro-text">
         <h1>Hello There!</h1>
-        <p>As a kid, I spent most of my days immersed in the solitude of my room, drawing and painting whatever it was in my mind. As I continued, the possibilities only expanded with time and dedication to the learning of art fundamentals.<br />As soon as I understood the principles that rule design and learn collaborative work, I started to feel suffocated by the confinement of the institution. So I dropped out of university to continue my career as an autodidact. <br /> Since there, I've been exploring and combining multiple disciplines as a freelancer, working with inspiring people, constantly learning cool stuff, and more importantly, pushing the boundaries of my creative potential.<br />In many ways I'm still that kid, always looking for something new.<br />If you've read this far, I think it should be self-evident that I love what I do.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       </div>
+      </div>
+      
 
     </div>
   </section>

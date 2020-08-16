@@ -1,8 +1,16 @@
 @import "variables.scss";
 
 .about {
-  img {
-    width: 50%;
+  &-intro {
+    img {
+      width: 50%;
+      max-width: 520px;
+      padding-right: 40px;
+    }
+    &-text {
+      width: 50%;
+      padding-left: 40px;
+    }
   }
 } 
 

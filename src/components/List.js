@@ -34,11 +34,11 @@ export function List({ selectedId }) {
           )}
         </JustifiedGrid>
 
-        {/* <div className="card-list flexbin flexbin-margin">
+        <div className="card-list flexbin flexbin-margin">
           {items.map(card => (
             <Card key={card.id} {...card} isSelected={card.id === selectedId} />
           ))}
-        </div> */}
+        </div>
       </div>
     </main>
   );
