@@ -13,7 +13,7 @@ import { Item } from "./components/Item";
 import { List } from "./components/List";
 import { About } from "./pages/about";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-// import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import { enableBodyScroll } from "body-scroll-lock";
 
 function Store({ match }) {
   let { id } = match.params;
@@ -22,6 +22,7 @@ function Store({ match }) {
     case 'about':
       return <About />
     default:
+      enableBodyScroll(document.querySelector(".card-content-container"))
       return (
         <>
           <List selectedId={id} />
