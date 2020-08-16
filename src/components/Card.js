@@ -2,28 +2,32 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export const Card = ({ id, title, theme }) => {
+export const Card = ({ path, src, width, height, alt, title, theme }) => {
   return (
+    <Link to={`${path}`} className={`card-open-link`}>
+      <img className="card-image" src={src} width={width} height={height} alt={alt} />
+    </Link>
     <div
-      // layoutId={`card-container-${id}`}
+      // layoutId={`card-container-${path}`}
       className={`card ${theme}`}>
+        <img className="card-image" src={src} width={width} height={height} alt={alt} />
       <div className="card-content-container">
         <motion.div className="card-content">
           <motion.div
-            className="card-image-container"
-            layoutId={`card-image-container-${id}`}
+         className="card-image-container"
+            layoutId={`card-image-container-${path}`}
           >
-            <img className="card-image" src={`images/${id}.jpg`} alt="" />
+            <img className="card-image" src={src} width={width} height={height} alt={alt} />
           </motion.div>
           <motion.div
             className="title-container"
-            layoutId={`title-container-${id}`}
+            layoutId={`title-container-${path}`}
           >
             <h2>{title}</h2>
           </motion.div>
         </motion.div>
       </div>
-      <Link to={`${id}`} className={`card-open-link`} />
+      <Link to={`${path}`} className={`card-open-link`} />
     </div>
   );
 }
