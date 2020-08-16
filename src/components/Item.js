@@ -11,31 +11,33 @@ export function Item({ id }) {
     // document.title = `You clicked ${count} times`;
     // this.targetElement = document.querySelector(".card-content-container");
     disableBodyScroll(document.querySelector(".card-content-container"))
-  },[]);
+  }, []);
   console.log("working?");
   return (
-    
-    <>
-    <motion.div
-    className="card-content-container open"
-    transition={{ duration: 2 }}
-    layoutId={`card-content-container-${id}`}
-    >
-    <motion.div
-            transition={{ duration: 2 }}
-            className="card-image-container"
-            layoutId={`card-image-container-${id}`}
-          >
-            <img src={src} alt={alt} />
 
-          </motion.div>
-    <LoremIpsum
-              p={6}
-              avgWordsPerSentence={6}
-              avgSentencesPerParagraph={4}
-            />
-    </motion.div>
-    
+    <>
+      <motion.div
+        className="card-content-container open flex vertical align-center"
+        transition={{ duration: 2 }}
+        layoutId={`card-content-container-${id}`}
+      >
+        <div className="container">
+        <motion.div
+          transition={{ duration: 2 }}
+          className="card-image-container"
+          layoutId={`card-image-container-${id}`}
+        >
+          <img src={src} alt={alt} />
+
+        </motion.div>
+        <LoremIpsum
+          p={6}
+          avgWordsPerSentence={6}
+          avgSentencesPerParagraph={4}
+        />
+        </div>
+      </motion.div>
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -46,7 +48,7 @@ export function Item({ id }) {
       >
         <Link to="/" />
         <div className="card-content-container flex-vertical open">
-        {/* <motion.div
+          {/* <motion.div
           transition={{ duration: 3 }}
           className="card-content container"> */}
 
@@ -61,8 +63,8 @@ export function Item({ id }) {
 
           </motion.div> */}
 
-{/* <img src={src} alt={alt} /> */}
-{/* <div className="dummy"></div> */}
+          {/* <img src={src} alt={alt} /> */}
+          {/* <div className="dummy"></div> */}
 
           {/* <motion.div
             transition={{ duration: 3 }}
@@ -74,7 +76,7 @@ export function Item({ id }) {
           {/* <motion.div className="content-container" animate> */}
 
 
-            {/* <LoremIpsum
+          {/* <LoremIpsum
               p={6}
               avgWordsPerSentence={6}
               avgSentencesPerParagraph={4}
@@ -82,10 +84,10 @@ export function Item({ id }) {
 
 
           {/* </motion.div> */}
-        {/* </motion.div> */}
-      </div>
+          {/* </motion.div> */}
+        </div>
       </motion.div>
-      
+
     </>
   );
 }
