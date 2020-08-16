@@ -22,26 +22,31 @@ export function List({ selectedId }) {
                 const item = Photos[index];
                 return (
                   
-                  <div className="something">
-                    <img src={src} width={width} height={height} alt={alt} />
-                  </div>
-
                   // <div className="something">
-                  //   <motion.div
-
-                  //     layoutId={`card-image-container-${item.path}`}
-                  //   >
-                  //     <img src={src} width={width} height={height} alt={alt} />
-                  //   </motion.div>
-                  //   <motion.div
-                  //   className="titled"
-
-                  //     layoutId={`title-container-${item.path}`}
-                  //   >
-                  //     <h2>{item.title}</h2>
-                  //   </motion.div>
-                  //   <Link to={`${item.path}`} className={`card-open-link`} />
+                  //   <img src={src} width={width} height={height} alt={alt} />
                   // </div>
+
+                  <div className="something"
+                  style={{
+                    position: 'absolute',
+                    left: left,
+                    top: top
+                  }}>
+                    <motion.div
+
+                      layoutId={`card-image-container-${item.path}`}
+                    >
+                      <img src={src} width={width} height={height} alt={alt} />
+                    </motion.div>
+                    <motion.div
+                    className="titled"
+
+                      layoutId={`title-container-${item.path}`}
+                    >
+                      <h2>{item.title}</h2>
+                    </motion.div>
+                    <Link to={`${item.path}`} className={`card-open-link`} />
+                  </div>
 
                 );
               })}
