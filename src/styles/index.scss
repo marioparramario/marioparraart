@@ -23,37 +23,37 @@ body {
   width: 90%;
 }
 
-// .overlay {
-//   z-index: 1;
-//   position: fixed;
-//   background: rgba(255, 255, 255, 0.8);
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(247, 244, 253, 0.2);
-//   z-index: 4000;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+.overlay {
+  z-index: 1;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(247, 244, 253, 0.2);
+  z-index: 4000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-// .overlay a {
-//   display: block;
-//   position: fixed;
-//   top: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
+.overlay a {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .content-container {
   overflow-y: auto;
