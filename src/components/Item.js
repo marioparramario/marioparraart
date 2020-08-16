@@ -6,16 +6,36 @@ import { Photos } from "../data/Photos";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 export function Item({ id }) {
-  const { title, src } = Photos.find(item => item.path === id);
+  const { alt, src } = Photos.find(item => item.path === id);
   useEffect(() => {
     // document.title = `You clicked ${count} times`;
     // this.targetElement = document.querySelector(".card-content-container");
-    // disableBodyScroll(document.querySelector(".card-content-container"))
+    disableBodyScroll(document.querySelector(".card-content-container"))
   },[]);
   console.log("working?");
   return (
     
     <>
+    <motion.div
+    className="card-content-container open"
+    transition={{ duration: 2 }}
+    layoutId={`card-content-container-${id}`}
+    >
+    <motion.div
+            transition={{ duration: 2 }}
+            className="card-image-container"
+            layoutId={`card-image-container-${id}`}
+          >
+            <img src={src} alt={alt} />
+
+          </motion.div>
+    <LoremIpsum
+              p={6}
+              avgWordsPerSentence={6}
+              avgSentencesPerParagraph={4}
+            />
+    </motion.div>
+    
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -29,14 +49,21 @@ export function Item({ id }) {
         {/* <motion.div
           transition={{ duration: 3 }}
           className="card-content container"> */}
-          <motion.div
+
+
+
+          {/* <motion.div
             transition={{ duration: 3 }}
-            className="something"
+            className="something-here"
             layoutId={`card-image-container-${id}`}
           >
-            <img className="card-image" src={src} alt="" />
+            <img src={src} alt={alt} />
 
-          </motion.div>
+          </motion.div> */}
+
+{/* <img src={src} alt={alt} /> */}
+{/* <div className="dummy"></div> */}
+
           {/* <motion.div
             transition={{ duration: 3 }}
             className="title-container"
@@ -45,11 +72,15 @@ export function Item({ id }) {
             <h2>{title}</h2>
           </motion.div> */}
           {/* <motion.div className="content-container" animate> */}
-            <LoremIpsum
+
+
+            {/* <LoremIpsum
               p={6}
               avgWordsPerSentence={6}
               avgSentencesPerParagraph={4}
-            />
+            /> */}
+
+
           {/* </motion.div> */}
         {/* </motion.div> */}
       </div>

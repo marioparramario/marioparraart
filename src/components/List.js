@@ -21,9 +21,13 @@ export function List({ selectedId }) {
                 const { alt, src, width, height, left, top } = image;
                 const item = Photos[index];
                 return (
-
+                  <motion.div
+                  className="card-content-container"
+                  transition={{ duration: 3 }}
+                  layoutId={`card-content-container-${item.path}`}
+                  >
                     <motion.div
-                      className="something"
+                      className="card-image-container"
                       layoutId={`card-image-container-${item.path}`}
                       style={{
                         position: 'absolute',
@@ -34,7 +38,7 @@ export function List({ selectedId }) {
                       <img src={src} width={width} height={height} alt={alt} />
                       <Link to={`${item.path}`} className={`card-open-link`} />
                     </motion.div>
-
+                    </motion.div>
                 );
               })}
             </React.Fragment>
