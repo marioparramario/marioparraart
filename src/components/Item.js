@@ -6,13 +6,16 @@ import { Photos } from "../data/Photos";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 export function Item({ id }) {
-  const { alt, src } = Photos.find(item => item.path === id);
+  const { alt, src, description, works } = Photos.find(item => item.path === id);
   useEffect(() => {
     // document.title = `You clicked ${count} times`;
     // this.targetElement = document.querySelector(".card-content-container");
     disableBodyScroll(document.querySelector(".card-content-container"))
   }, []);
   console.log("working?");
+  const workItem=(work)=>(
+    <img src={work.path} alt={work.alt} />
+  );
   return (
 
     <>
@@ -39,11 +42,11 @@ export function Item({ id }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1,  transition: { duration: 2, delay: 1 } }}
           exit={{ opacity: 0, transition: { duration: 2 } }}
-          className="text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc scelerisque viverra mauris in aliquam. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Erat nam at lectus urna duis convallis convallis tellus id.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc scelerisque viverra mauris in aliquam. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Erat nam at lectus urna duis convallis convallis tellus id.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc scelerisque viverra mauris in aliquam. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Erat nam at lectus urna duis convallis convallis tellus id.
+          className="text">{description}
           </motion.p>
+          <div className="images">
+            {works? works.map(workItem): null} 
+          </div>
 
 
           {/* <LoremIpsum

@@ -7,7 +7,41 @@ export const Photos = [
     path: "chile-calling",
     src: "https://res.cloudinary.com/oqdesign/image/upload/v1597624391/New%20Portdolio/chile-calling-00_yav5j2.jpg",
     width: 1,
-    height: 1
+    height: 1,
+    "works": [
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484574/illustration/boolean/boolean-01_fdetnq.jpg",
+        "alt": "Comic book character of a young woman with an afro, goggles, tight pants, boots, long sleeve, and gloves jumping and drawing web interfaces" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484573/illustration/boolean/boolean-02_t2fnro.jpg",
+        "alt": "Comic book character of a jumping man with red hair, blue skin, goggles, and tight suit superhero-like, holding a power sphere in the left hand and a laptop in the right" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484574/illustration/boolean/boolean-03_pc74ut.jpg",
+        "alt": "Comic book character of a jumping woman with purple hair, pale lightblue skin, goggles, and tight suit superhero-like, holding a power sphere with both hands" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484574/illustration/boolean/boolean-04_lxmkny.jpg",
+        "alt": "Comic book character of two students floating where the woman is holding a tablet and the man a laptop" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484575/illustration/boolean/boolean-05_ipwwl1.jpg",
+        "alt": "Comic book character of a woman in her thirties is happily talking on a mobile phone and using a laptop" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484573/illustration/boolean/boolean-06_txhr2w.jpg",
+        "alt": "Two comic book characters of women shaking hands in a relaxed manner, both inside of a window browser" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484574/illustration/boolean/boolean-07_omsbrj.jpg",
+        "alt": "A table with a diverse group of comic book characters exchanging ideas" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484575/illustration/boolean/boolean-08_f4zupd.jpg",
+        "alt": "A comic book character of a futuristic astronaut, jumping vigorously with a portal as a background" 
+      }
+    ]
   },
   {
     title: "Boolean Academy",
