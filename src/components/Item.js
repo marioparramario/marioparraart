@@ -10,8 +10,12 @@ export function Item({ id }) {
     disableBodyScroll(document.querySelector(".card-content-container"))
   }, []);
   console.log("working?");
-  const workItem=(work)=>(
-    <img src={work.path} alt={work.alt} />
+  const workItem = (work) => (
+    <motion.img
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 2, delay: 1 } }}
+      exit={{ opacity: 0, transition: { duration: 2 } }}
+      src={work.path} alt={work.alt} />
   );
   return (
     <>
@@ -28,13 +32,13 @@ export function Item({ id }) {
           </motion.div>
           <Link to="/">Go back!</Link>
           <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1,  transition: { duration: 2, delay: 1 } }}
-          exit={{ opacity: 0, transition: { duration: 2 } }}
-          className="text">{description}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 2, delay: 1 } }}
+            exit={{ opacity: 0, transition: { duration: 2 } }}
+            className="text">{description}
           </motion.p>
           <div className="images">
-            {works? works.map(workItem): null} 
+            {works ? works.map(workItem) : null}
           </div>
         </div>
       </div>

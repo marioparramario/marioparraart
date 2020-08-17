@@ -5,42 +5,12 @@ import { Welcome } from "./Welcome";
 //import { Card } from "./Card";
 import { motion } from "framer-motion";
 import { Data } from "../data/Data";
+import { imageHover, titleHover } from "../helpers/Animations";
 import "../styles/flexbin.scss";
 
 
 
-const textMotion = {
-  rest: {
-    color: "grey",
-    x: 0,
-    transition: {
-      duration: 2,
-      type: "tween",
-      ease: "easeIn"
-    }
-  },
-  hover: {
-    color: "blue",
-    x: 30,
-    transition: {
-      duration: 0.4,
-      type: "tween",
-      ease: "easeOut"
-    }
-  }
-};
 
-const slashMotion = {
-  rest: { opacity: 0, ease: "easeOut", duration: 0.2, type: "tween" },
-  hover: {
-    opacity: 1,
-    transition: {
-      duration: 0.4,
-      type: "tween",
-      ease: "easeIn"
-    }
-  }
-};
 
 
 
@@ -58,12 +28,10 @@ export function List({ selectedId }) {
                 const item = Data[index];
                 return (
                   <div
-                  className="card-content-container flex vertical align-center"
+                    className="card-content-container flex vertical align-center"
                   >
                     <motion.div
-                    // key={i}
-                    initial="rest" whileHover="hover" animate="rest"
-
+                      // key={i}
                       className="card-image-container"
                       layoutId={`card-image-container-${item.path}`}
                       style={{
@@ -72,13 +40,21 @@ export function List({ selectedId }) {
                         top: top
                       }}
                     >
-                      <img src={src} width={width} height={height} alt={alt} />
-                      <Link to={`${item.path}`} className={`card-open-link`} />
-                    <motion.h3
-                    variants={slashMotion}
-                    >{item.title}</motion.h3>
+                      <motion.div
+                        initial="rest" whileHover="hover" animate="rest"
+                        className="hover-container">
+                        <motion.img
+                          initial="rest"
+                          variants={imageHover}
+                          src={src} width={width} height={height} alt={alt} />
+                        <Link to={`${item.path}`} className={`card-open-link`} />
+                        <motion.h3
+                          initial="rest"
+                          variants={titleHover}
+                        >{item.title}</motion.h3>
+                      </motion.div>
                     </motion.div>
-                  {/* </motion.div> */}
+                    {/* </motion.div> */}
                   </div>
                 );
               })}

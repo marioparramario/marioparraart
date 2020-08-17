@@ -1,6 +1,6 @@
 export const Data = [
   {
-    title: "Chile Calling.",
+    title: "Chile is Calling.",
     description: "As a consequence of the Chilean revolution of 2019, my country was reviving one of the most horrific episodes in history, only seen before in dictatorship.  \r\n  Despite the police brutality, my people stood firmly united against injustice.  \r\n  Deeply moved and inspired by the events, I couldn't help but grab my pen and protest from the distance by doing what I do.  \r\n  Chile was calling me and I responded without hesitation. ",
     client: "Personal",
     year: "2019",
