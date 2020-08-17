@@ -4,7 +4,12 @@
   .container {
     padding: 0;
     // width: 100%;
-    background: red;
+    // background: red;
+  }
+  h3 {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
   }
 }
 
@@ -23,6 +28,20 @@
   overflow: auto;
   // padding: 40px 0;
   // background: red;
+
+  // .card-image-container {
+  //   background: blue;
+  //   img {
+  //     opacity: 0.5;
+  //   }
+  // }
+  .card-image-container {
+    width: 100%;
+    img {
+      width: inherit;
+    }
+  }
+
 }
 
 
@@ -40,10 +59,4 @@
 }
 .titled {
   display: none;
-}
-.dummy {
-  width: 100%;
-  height: 100%;
-  background: blue;
-
 }
