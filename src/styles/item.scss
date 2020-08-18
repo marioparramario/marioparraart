@@ -1,0 +1,26 @@
+@import "variables.scss";
+.card-content-container.open {
+  .images {
+    width: 70%;
+    display: inline-flex;
+    img {
+      width: 100%;
+    }
+
+  }
+  .text-container {
+    width: 30%;
+    position: sticky;
+    top: 0;
+    right: 0;
+    display: inline-flex;
+    float: left;
+    h3 {
+      position: static;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+

@@ -66,3 +66,26 @@ export const simpleAnimation = {
   },
 };
 
+// Work Navigation
+export const workDetailNavigation = {
+  initial: { 
+    // y: 0,
+    opacity: 0
+  },
+  animate: {
+    // y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      delay: 1
+    }
+  },
+  exit: {
+    // y: 0,
+    opacity: 0,
+    transition: {
+      duration: 0.4,
+      delay: 0
+    }
+  },
+}

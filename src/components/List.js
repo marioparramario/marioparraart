@@ -2,17 +2,9 @@ import React, { Component } from 'react';
 import JustifiedGrid from 'react-justified-grid';
 import { Link } from "react-router-dom";
 import { Welcome } from "./Welcome";
-//import { Card } from "./Card";
 import { motion } from "framer-motion";
 import { Data } from "../data/Data";
 import { imageHover, titleHover } from "../helpers/Animations";
-import "../styles/flexbin.scss";
-
-
-
-
-
-
 
 export function List({ selectedId }) {
   const theme = '';
@@ -31,7 +23,6 @@ export function List({ selectedId }) {
                     className="card-content-container flex vertical align-center"
                   >
                     <motion.div
-                      // key={i}
                       className="card-image-container"
                       layoutId={`card-image-container-${item.path}`}
                       style={{
@@ -51,10 +42,11 @@ export function List({ selectedId }) {
                         <motion.h3
                           initial="rest"
                           variants={titleHover}
-                        >{item.title}</motion.h3>
+                        >
+                          {item.title}
+                        </motion.h3>
                       </motion.div>
                     </motion.div>
-                    {/* </motion.div> */}
                   </div>
                 );
               })}
