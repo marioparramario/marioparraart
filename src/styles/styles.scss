@@ -5,6 +5,7 @@
     padding: 0;
     // width: 100%;
     // background: red;
+    // background: transparent;
   }
   h3 {
     position: absolute;
@@ -17,24 +18,14 @@
   top: 96px;
   left: 0;
   right: 0;
-    // width: 90%;
-    // max-width: $desktop;
   height: 100%;
   position: fixed;
-  // position: absolute;
   z-index: 9;
-  // overflow: hidden;
   overflow: scroll;
   overflow: auto;
-  // padding: 40px 0;
-  // background: red;
-
-  // .card-image-container {
-  //   background: blue;
-  //   img {
-  //     opacity: 0.5;
-  //   }
-  // }
+.container {
+  // background: white;  
+}
   .card-image-container {
     width: 100%;
     img {

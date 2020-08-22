@@ -26,8 +26,8 @@ body {
 .overlay {
   z-index: 1;
   position: fixed;
-  background: rgba(255, 255, 255, 1);
-  // background: yellow;
+  // background: rgba(255, 255, 255, 1);
+  background: yellow;
   top: 0;
   bottom: 0;
   left: 0;
@@ -125,3 +125,6 @@ span, .mono {
   font-weight: normal;
 }
 
+.above {
+  z-index: 2
+}

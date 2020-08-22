@@ -1,7 +1,9 @@
 @import "variables.scss";
 .card-content-container.open {
   .images {
-    width: 70%;
+    width: calc(70% - 60px);
+    display: inline-flex;
+    padding-left: 60px;
     display: inline-flex;
     img {
       width: 100%;
@@ -11,8 +13,8 @@
   .text-container {
     width: 30%;
     position: sticky;
-    top: 0;
-    right: 0;
+    top: 32px;
+    // right: 0;
     display: inline-flex;
     float: left;
     h3 {
@@ -24,3 +26,6 @@
   }
 }
 
+// .container {
+//   border: 1px solid red;
+// }

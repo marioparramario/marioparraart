@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link, useHistory } from "react-router-dom";
 import { WorkNavigation } from "./WorkNavigation";
 import "../styles/item.scss";
@@ -39,6 +39,7 @@ export function Item({ id }) {
 
   return (
     <>
+
       <div className="card-content-container open flex vertical align-center">
         <div className="container">
           <WorkNavigation onClose={onClose} />
@@ -70,7 +71,21 @@ export function Item({ id }) {
       </div>
       {/* </div> */}
 
+
+
       <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 2 }}
+        className="overlay"
+      >
+      </motion.div>
+
+
+
+
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0, transition: { duration: 2 } }}
@@ -80,7 +95,7 @@ export function Item({ id }) {
       >
         <Link to="/" />
         <div className="card-content-container flex-vertical open"></div>
-      </motion.div>
+      </motion.div> */}
     </>
   );
 }
