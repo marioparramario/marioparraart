@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export const AboutClosing = () => (
-  <div className="about-closing flex justify-center align-center">
+  <div className="about-closing">
     <div className="column hire">
       <h3>You can hire me for:</h3>
       <ul className="wrapper">

@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export const AboutIntro = () => (
-  <div className="about-intro flex justify-start align-center">
+  <div className="about-intro">
     <div className="image">
       <img src="https://res.cloudinary.com/oqdesign/image/upload/v1597872364/New%20Portdolio/about-15_afwuy7.jpg"></img>
     </div>

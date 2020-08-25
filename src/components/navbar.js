@@ -3,8 +3,8 @@ import Logo from "./Logo";
 import "../styles/navbar.scss";
 
 export const Navbar = () => (
-  <nav className="navbar flex justify-stretch">
-  <div className="wrapper flex align-center justify-between" exit="exit">
+  <nav className="navbar flex">
+  <div className="wrapper">
     <a href="/"
       className="logo">
       Logo Mario Parra

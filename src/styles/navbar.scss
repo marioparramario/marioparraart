@@ -2,6 +2,7 @@
 
 .navbar {
   position: fixed;
+
   // background: white;
   height: 96px;
   width: 100%;
@@ -9,6 +10,10 @@
   left: 0;
   z-index: 991;
   .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: normal;
+    align-items: center;
     padding: 0 50px;
     width: 100%;
   }
