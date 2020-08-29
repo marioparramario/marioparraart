@@ -6,6 +6,7 @@ import "../styles/item.scss";
 
 import { Data } from "../data/Data";
 import { disableBodyScroll } from "body-scroll-lock";
+import scrollIntoView from 'scroll-into-view';
 
 export function Item({ id }) {
   const { alt, src, description, works, title } = Data.find(
@@ -25,10 +26,22 @@ export function Item({ id }) {
 
   const onClose = (event) => {
     event.preventDefault();
-    document.querySelector(".images").scrollIntoView({
-      behavior: "smooth",
-    });
-    setTimeout(() => history.push('/'), 1000);
+
+    scrollIntoView(
+      document.querySelector(".images"),
+      {
+        align:{
+          top: -10,
+          left: 0,
+          topOffset: -10,
+          leftOffset: 0,
+        }
+      },
+      (type) => {
+        //  window.scrollTo(0,0);
+        history.push('/');
+      } 
+    );
   };
 
   useEffect(() => {
