@@ -47,9 +47,11 @@ export default function App() {
 
         <AnimateSharedLayout type="crossfade">
           <Navbar />
+          <AnimatePresence exitBeforeEnter>
           <Router>
             <Route path={["/:id", "/"]} component={Store} />
           </Router>
+          </AnimatePresence>
           <Toggle theme={theme} toggleTheme={themeToggler} />
           <Footer />
         </AnimateSharedLayout>

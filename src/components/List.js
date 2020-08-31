@@ -2,14 +2,27 @@ import React, { Component } from 'react';
 import JustifiedGrid from 'react-justified-grid';
 import { Link } from "react-router-dom";
 import { Welcome } from "./Welcome";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Data } from "../data/Data";
 import { imageHover, titleHover } from "../helpers/Animations";
+import {
+  reallySimple
+} from "../helpers/Animations";
+
+
 
 export function List({ selectedId }) {
   const theme = '';
   return (
-    <main className={`content-wrapper flex-vertical ${selectedId ? 'illustration-open' : ''}`}>
+
+    <motion.main 
+          // variants={reallySimple}
+          // initial="initial"
+          // animate="animate"
+          // exit="exit"
+          exit={{opacity: 0}}
+          
+          className={`content-wrapper flex-vertical ${selectedId ? 'illustration-open' : ''}`}>
       <div className="container">
         <Welcome />
         <JustifiedGrid images={Data} rows={undefined} maxRowHeight={400} gutter={16} className="justified-grid">
@@ -59,6 +72,6 @@ export function List({ selectedId }) {
           )}
         </JustifiedGrid>
       </div>
-    </main>
+    </motion.main>
   );
 }
