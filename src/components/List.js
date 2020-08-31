@@ -12,7 +12,7 @@ export function List({ selectedId }) {
     <main className={`content-wrapper flex-vertical ${selectedId ? 'illustration-open' : ''}`}>
       <div className="container">
         <Welcome />
-        <JustifiedGrid images={Data} rows={8} maxRowHeight={400} gutter={16} className="justified-grid">
+        <JustifiedGrid images={Data} rows={undefined} maxRowHeight={400} gutter={16} className="justified-grid">
           {processedImages => (
             <React.Fragment>
               {processedImages.map((image, index) => {
@@ -23,13 +23,11 @@ export function List({ selectedId }) {
                     className="card-content-container flex vertical align-center"
                   >
                     <motion.div
-                      transition={{
-                        type: "tween",
-                        delay: 2,
-                        duration: 0.6,
-                        // ease: [0.43, 0.13, 0.23, 0.96],
-                        ease: [1, 0.02, 0.55, 0.67],
-                      }}
+                    transition={{ 
+                      type: "tween",
+                      delay: 0.9,
+                      ease: [0.59, 0.12, 0, 0.95],
+                     }}
                       className="card-image-container"
                       layoutId={`card-image-container-${item.path}`}
                       style={{

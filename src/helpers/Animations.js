@@ -131,7 +131,16 @@ export const textComponentsWorks = {
       type: "tween",
       ease: loquitoYoutube
     }
-  }
+  },
+  exit: {
+    opacity: 0,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      type: "tween",
+      ease: loquitoYoutube
+    }
+  },
 };
 
 
@@ -149,7 +158,7 @@ export const imagesWork = {
   exit: {
     opacity: 0,
     transition: { 
-      duration: 0.8
+      duration: 0.4
     }
   }
 };
@@ -168,7 +177,7 @@ export const overlayWorks = {
   exit: {
     opacity: 0,
     transition: { 
-      duration: 0.6
+      duration: 1
     }
   }
 };

@@ -114,7 +114,9 @@ export function Item({ id }) {
 
 
 
-      <motion.div
+
+
+<motion.div
         variants={overlayWorks}
         initial="initial"
         animate="animate"
@@ -122,6 +124,8 @@ export function Item({ id }) {
         className="overlay"
       >
       </motion.div>
+
+
 
 
 

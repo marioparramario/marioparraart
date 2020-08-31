@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom';
 export function WorkNavigation ({ onClose }) {
 
   return(
-<AnimatePresence exitBeforeEnter>
+
 <motion.nav
     variants={workDetailNavigation}
     initial="initial"
@@ -24,5 +24,5 @@ export function WorkNavigation ({ onClose }) {
     {/* <Link className="mono" to="/">Close project</Link> */}
     <a className="mono" onClick={onClose}>Close project</a>
   </motion.nav>
-</AnimatePresence>
+
 )};
