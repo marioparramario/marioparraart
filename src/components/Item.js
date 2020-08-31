@@ -24,11 +24,28 @@ export function Item({ id }) {
   );
 
   const onClose = (event) => {
+    const containerScrollPosition = document.getElementById(id).scrollTop;
+    const timeFactor = 4;
+    const speedFactor = 500;
+    const scrollTime = Math.round((containerScrollPosition/timeFactor)/speedFactor * 1000);
+    
     event.preventDefault();
-    document.querySelector(".images").scrollIntoView({
-      behavior: "smooth",
-    });
-    setTimeout(() => history.push('/'), 1000);
+
+    /*
+      TODO: check why scroll it is 32
+    */
+    document.querySelector(".images")
+      .scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+
+    console.log('time to scroll', scrollTime);
+
+    setTimeout(() => {
+      history.push('/')
+    }, scrollTime);
   };
 
   useEffect(() => {
@@ -39,8 +56,7 @@ export function Item({ id }) {
 
   return (
     <>
-
-      <div className="card-content-container open flex vertical align-center">
+      <div id={id} className="card-content-container open flex vertical align-center">
         <div className="container">
           <WorkNavigation onClose={onClose} />
           <div className="text-container flex vertical">
