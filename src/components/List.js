@@ -23,6 +23,13 @@ export function List({ selectedId }) {
                     className="card-content-container flex vertical align-center"
                   >
                     <motion.div
+                      transition={{
+                        type: "tween",
+                        delay: 2,
+                        duration: 0.6,
+                        // ease: [0.43, 0.13, 0.23, 0.96],
+                        ease: [1, 0.02, 0.55, 0.67],
+                      }}
                       className="card-image-container"
                       layoutId={`card-image-container-${item.path}`}
                       style={{

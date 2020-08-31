@@ -15,7 +15,8 @@
 }
 
 .card-content-container.open {
-  top: 96px;
+  // top: 96px;
+  top: 128px;
   left: 0;
   right: 0;
   height: 100%;
@@ -23,14 +24,24 @@
   z-index: 9;
   overflow: scroll;
   overflow: auto;
+  // padding-top: 40px;
 .container {
-  // background: white;  
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 60px;
+  align-items: start;
+  justify-items: start;
 }
   .card-image-container {
     width: 100%;
+    border: 1px dotted green;
     img {
       width: inherit;
+
     }
+    // svg {
+    //   width: initial;
+    // }
   }
 
 }

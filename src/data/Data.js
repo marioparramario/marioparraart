@@ -77,10 +77,14 @@ export const Data = [
     client: "Jovoto / Victorinox",
     year: "2017",
     path: "victorinox",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1598826957/Ultimate%20Portfolio/Berlin/thumbnail_ovoy0s.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1598889396/Ultimate%20Portfolio/Berlin/thumbnail-grid_tpdbye.jpg",
     width: 16,
     height: 9,
     "works": [
+      {
+        "path": " https://res.cloudinary.com/oqdesign/image/upload/v1598826957/Ultimate%20Portfolio/Berlin/thumbnail_ovoy0s.svg",
+        "alt": "Geometric flat illustration of Berlin in the left side, and in the right a man plays a guitar while a woman dances" 
+      },
       {
         "path": "https://res.cloudinary.com/oqdesign/image/upload/v1598826677/Ultimate%20Portfolio/Berlin/composition-01_shx5sh.svg",
         "alt": "Geometric flat illustration of Berlin in the left side, and in the right a man plays a guitar while a woman dances" 

@@ -23,6 +23,10 @@
     align-items: center;
     justify-self: end;
     a {
+      font-family: $roboto;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: normal;
       font-size: 12px;
     }
   } 

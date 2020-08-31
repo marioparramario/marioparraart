@@ -84,9 +84,10 @@
 .navigation {
   font-size: 0.8rem;
   height: 32px;
-  position: sticky;
+  position: fixed;
   width: 100%;
-  top: 0;
+  top: 96px;
+  // top: 128px;
   left: 0;
   background: white;
   z-index: 9;

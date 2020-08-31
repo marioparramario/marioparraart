@@ -8,6 +8,13 @@ import { Data } from "../data/Data";
 import { disableBodyScroll } from "body-scroll-lock";
 import scrollIntoView from 'scroll-into-view';
 
+
+import {
+  reallySimple
+} from "../helpers/Animations";
+
+
+
 export function Item({ id }) {
   const { alt, src, description, works, title } = Data.find(
     (item) => item.path === id
@@ -15,10 +22,11 @@ export function Item({ id }) {
   const history = useHistory();
 
   const workItem = (work) => (
+    // This are the images of the work
     <motion.img
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 2, delay: 1 } }}
-      exit={{ opacity: 0, transition: { duration: 2 } }}
+      animate={{ opacity: 1, transition: { duration: 0.3, delay: 0.1 } }}
+      exit={{ opacity: 0, transition: { duration: 0.3 } }}
       src={work.path}
       alt={work.alt}
     />
@@ -58,14 +66,20 @@ export function Item({ id }) {
   return (
     <>
       <div id={id} className="card-content-container open flex vertical align-center">
+      <WorkNavigation onClose={onClose} />
         <div className="container">
-          <WorkNavigation onClose={onClose} />
-          <div className="text-container flex vertical">
-            <h3>{title}</h3>
+          
+          <div className="text-container">
+            <motion.h3
+            variants={reallySimple}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            >{title}</motion.h3>
             <motion.p
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { duration: 2, delay: 1 } }}
-              exit={{ opacity: 0, transition: { duration: 2 } }}
+              animate={{ opacity: 1, transition: { duration: 0.3, delay: 1 } }}
+              exit={{ opacity: 0, transition: { duration: 0.3 } }}
               className="text"
             >
               {description}
@@ -73,9 +87,15 @@ export function Item({ id }) {
           </div>
           {/* <div className="wrapper flex"> */}
 
-          <div className="images flex-vertical">
+          <div className="images">
             <motion.div
-              transition={{ duration: 2 }}
+              transition={{ 
+                type: "tween",
+                // delay: 0.9,
+                duration: 0.6,
+                // ease: [0.43, 0.13, 0.23, 0.96],
+                ease: [1, 0.02, 0.55, 0.67],
+               }}
               className="card-image-container"
               layoutId={`card-image-container-${id}`}
             >
@@ -94,7 +114,7 @@ export function Item({ id }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 0.6 }}
         className="overlay"
       >
       </motion.div>

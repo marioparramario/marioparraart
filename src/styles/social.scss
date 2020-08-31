@@ -4,9 +4,10 @@
   z-index: 1;
   a {
     position: relative;
-    font-size: 13px;
-    padding: 0 12px;
+    font-size: 20px;
+    padding: 0 18px;
     text-decoration: none;
+    text-transform: lowercase;
     &:first-child {
       padding-left: 0;
       &::before {
@@ -21,7 +22,7 @@
       bottom: auto;
       left: 0;
       width: 1px;
-      height: 80%;
+      height: 13px;
     }
   }
 }
