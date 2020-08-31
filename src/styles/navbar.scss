@@ -85,10 +85,14 @@
   font-size: 0.8rem;
   height: 32px;
   position: fixed;
-  width: 100%;
+  // width: 100%;
+  max-width: $desktop;
+  width: 90%;
   top: 96px;
   // top: 128px;
-  left: 0;
+  // left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background: white;
   z-index: 9;
   .flex a:nth-of-type(1) {

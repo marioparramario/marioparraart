@@ -10,7 +10,10 @@ import scrollIntoView from 'scroll-into-view';
 
 
 import {
-  reallySimple
+  imagesWork,
+  textContainerWorks,
+  textComponentsWorks,
+  overlayWorks
 } from "../helpers/Animations";
 
 
@@ -24,9 +27,10 @@ export function Item({ id }) {
   const workItem = (work) => (
     // This are the images of the work
     <motion.img
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.3, delay: 0.1 } }}
-      exit={{ opacity: 0, transition: { duration: 0.3 } }}
+      variants={imagesWork}
+      initial="initial"
+      animate="animate"
+      exit="exit"
       src={work.path}
       alt={work.alt}
     />
@@ -36,8 +40,8 @@ export function Item({ id }) {
     const containerScrollPosition = document.getElementById(id).scrollTop;
     const timeFactor = 4;
     const speedFactor = 500;
-    const scrollTime = Math.round((containerScrollPosition/timeFactor)/speedFactor * 1000);
-    
+    const scrollTime = Math.round((containerScrollPosition / timeFactor) / speedFactor * 1000);
+
     event.preventDefault();
 
     /*
@@ -66,36 +70,36 @@ export function Item({ id }) {
   return (
     <>
       <div id={id} className="card-content-container open flex vertical align-center">
-      <WorkNavigation onClose={onClose} />
+        <WorkNavigation onClose={onClose} />
         <div className="container">
-          
-          <div className="text-container">
-            <motion.h3
-            variants={reallySimple}
+
+          <motion.div
+            variants={textContainerWorks}
             initial="initial"
             animate="animate"
             exit="exit"
+            className="text-container">
+            <motion.h3
+              variants={textComponentsWorks}
             >{title}</motion.h3>
             <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { duration: 0.3, delay: 1 } }}
-              exit={{ opacity: 0, transition: { duration: 0.3 } }}
+              variants={textComponentsWorks}
               className="text"
             >
               {description}
             </motion.p>
-          </div>
+          </motion.div>
           {/* <div className="wrapper flex"> */}
 
           <div className="images">
             <motion.div
-              transition={{ 
+              transition={{
                 type: "tween",
                 // delay: 0.9,
-                duration: 0.6,
+                duration: 1,
                 // ease: [0.43, 0.13, 0.23, 0.96],
-                ease: [1, 0.02, 0.55, 0.67],
-               }}
+                ease: [0.59, 0.12, 0, 0.95],
+              }}
               className="card-image-container"
               layoutId={`card-image-container-${id}`}
             >
@@ -111,10 +115,10 @@ export function Item({ id }) {
 
 
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.6 }}
+        variants={overlayWorks}
+        initial="initial"
+        animate="animate"
+        exit="exit"
         className="overlay"
       >
       </motion.div>
