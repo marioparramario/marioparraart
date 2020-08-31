@@ -77,28 +77,28 @@ export const Data = [
     client: "Jovoto / Victorinox",
     year: "2017",
     path: "victorinox",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1597624391/New%20Portdolio/berlin-00_plumtj.jpg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1598826957/Ultimate%20Portfolio/Berlin/thumbnail_ovoy0s.svg",
     width: 16,
     height: 9,
     "works": [
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484562/illustration/berlin/berlin-01_c5ofr6.jpg",
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1598826677/Ultimate%20Portfolio/Berlin/composition-01_shx5sh.svg",
         "alt": "Geometric flat illustration of Berlin in the left side, and in the right a man plays a guitar while a woman dances" 
       },
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484562/illustration/berlin/berlin-02_pw9hld.jpg",
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1598826678/Ultimate%20Portfolio/Berlin/stripes_zponph.svg",
         "alt": "Mockup of a swiss knife with a man playing the guitar while a woman dances" 
       },
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484562/illustration/berlin/berlin-03_umsahl.jpg",
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1598826680/Ultimate%20Portfolio/Berlin/mockup-open_szt8d6.jpg",
         "alt": "View of swiss knife" 
       },
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484562/illustration/berlin/berlin-04_jqgntg.jpg",
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1598826678/Ultimate%20Portfolio/Berlin/mockup-together_pqzdlx.jpg",
         "alt": "View of swiss knife" 
       },
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484562/illustration/berlin/berlin-05_wwdojz.jpg",
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1598826677/Ultimate%20Portfolio/Berlin/composition-02_v30st3.svg",
         "alt": "View of swiss knife" 
       }
     ]
