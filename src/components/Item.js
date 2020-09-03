@@ -6,17 +6,14 @@ import "../styles/item.scss";
 
 import { Data } from "../data/Data";
 import { disableBodyScroll } from "body-scroll-lock";
-import scrollIntoView from 'scroll-into-view';
-
+import scrollIntoView from "scroll-into-view";
 
 import {
   imagesWork,
   textContainerWorks,
   textComponentsWorks,
-  overlayWorks
+  overlayWorks,
 } from "../helpers/Animations";
-
-
 
 export function Item({ id }) {
   const { alt, src, description, works, title } = Data.find(
@@ -40,24 +37,25 @@ export function Item({ id }) {
     const containerScrollPosition = document.getElementById(id).scrollTop;
     const timeFactor = 4;
     const speedFactor = 500;
-    const scrollTime = Math.round((containerScrollPosition / timeFactor) / speedFactor * 1000);
+    const scrollTime = Math.round(
+      (containerScrollPosition / timeFactor / speedFactor) * 1000
+    );
 
     event.preventDefault();
 
     /*
       TODO: check why scroll it is 32
     */
-    document.querySelector(".images")
-      .scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-      });
+    document.querySelector(".images").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
 
-    console.log('time to scroll', scrollTime);
+    console.log("time to scroll", scrollTime);
 
     setTimeout(() => {
-      history.push('/')
+      history.push("/");
     }, scrollTime);
   };
 
@@ -69,23 +67,21 @@ export function Item({ id }) {
 
   return (
     <>
-      <div id={id} className="card-content-container open flex vertical align-center">
-        <WorkNavigation onClose={onClose} />
+      <div
+        id={id}
+        className="card-content-container open flex vertical align-center"
+      >
+        <WorkNavigation workId={id} onClose={onClose} />
         <div className="container">
-
           <motion.div
             variants={textContainerWorks}
             initial="initial"
             animate="animate"
             exit="exit"
-            className="text-container">
-            <motion.h3
-              variants={textComponentsWorks}
-            >{title}</motion.h3>
-            <motion.p
-              variants={textComponentsWorks}
-              className="text"
-            >
+            className="text-container"
+          >
+            <motion.h3 variants={textComponentsWorks}>{title}</motion.h3>
+            <motion.p variants={textComponentsWorks} className="text">
               {description}
             </motion.p>
           </motion.div>
@@ -112,23 +108,13 @@ export function Item({ id }) {
       </div>
       {/* </div> */}
 
-
-
-
-
-<motion.div
+      <motion.div
         variants={overlayWorks}
         initial="initial"
         animate="animate"
         exit="exit"
         className="overlay"
-      >
-      </motion.div>
-
-
-
-
-
+      ></motion.div>
 
       {/* <motion.div
         initial={{ opacity: 0 }}
