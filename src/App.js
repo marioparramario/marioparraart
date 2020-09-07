@@ -22,7 +22,6 @@ function Store({ match }) {
     case 'about':
       return <About />
     default:
-      enableBodyScroll(document.querySelector(".this-class-proves-that-this-doesnt-work"))
       return (
         <>
           <List selectedId={id} />

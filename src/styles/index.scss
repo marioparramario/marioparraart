@@ -62,14 +62,13 @@ body {
 
 .card-image-container {
   // display: inline-block;
-
 }
 .card {
   position: relative;
-    display: block;
-    height: 300px;
-    margin: 12px;
-    flex-grow: 1;
+  display: block;
+  height: 300px;
+  margin: 12px;
+  flex-grow: 1;
 }
 .card-content {
   display: grid;
@@ -80,7 +79,12 @@ a {
   text-decoration: none;
   font-weight: $bold;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: $bold;
 }
@@ -98,7 +102,6 @@ p {
   font-size: 20px;
   font-weight: $medium;
 }
-
 
 .toggle-icon {
   position: relative;
@@ -118,7 +121,8 @@ p {
     height: 100%;
   }
 }
-span, .mono {
+span,
+.mono {
   font-family: $roboto;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -126,5 +130,16 @@ span, .mono {
 }
 
 .above {
-  z-index: 2
+  z-index: 2;
+}
+
+.grid-loader {
+  height: 100%;
+  color: salmon;
+  background: bisque;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

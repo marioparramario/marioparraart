@@ -5,8 +5,7 @@ import { WorkNavigation } from "./WorkNavigation";
 import "../styles/item.scss";
 
 import { Data } from "../data/Data";
-import { disableBodyScroll } from "body-scroll-lock";
-import scrollIntoView from "scroll-into-view";
+import { enableBodyScroll, disableBodyScroll } from "body-scroll-lock";
 
 import {
   imagesWork,
@@ -55,14 +54,13 @@ export function Item({ id }) {
     console.log("time to scroll", scrollTime);
 
     setTimeout(() => {
+      disableBodyScroll();
       history.push("/");
     }, scrollTime);
   };
 
   useEffect(() => {
-    disableBodyScroll(
-      document.querySelector(".this-class-proves-that-this-doesnt-work")
-    );
+    enableBodyScroll();
   }, []);
 
   return (
