@@ -363,42 +363,7 @@ export const Data = [
     ]
   },
 
-  {
-    title: "Mapuches.",
-    description: "The genesis of this deck comes from my motivation to spread the Mapuche culture and try to awake interest and awareness on the history of this ethnic group that occupied plenty of the Chilean territory and to which I happen to be part of. \r\n I chose playing card because it is a widely ubiquitous artifact and most importantly, very flexible to be repurposed in many creative ways. \r\n I had a lot of fun synchronizing the reflected versions of each illustration to make it work as a mirror and a whole at the same time. \r\n #Wallmapu",
-    client: "Personal",
-    year: "2016",
-    path: "mapuches",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599591055/Ultimate%20Portfolio/Mapuches/mapuches-thumbnail_bamkq9.jpg",
-    width: 4,
-    height: 3,
-    "works": [
-      {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591055/Ultimate%20Portfolio/Mapuches/machi_finntk.svg",
-        "alt": "Flat illustration" 
-      },
-      {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591054/Ultimate%20Portfolio/Mapuches/lonko_vsxbh4.svg",
-        "alt": "Flat illustration of a woman with indigenous features in cool colors" 
-      },
-      {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591054/Ultimate%20Portfolio/Mapuches/machi-2_tshcue.svg",
-        "alt": "Flat illustration of a woman with indigenous features in cool colors" 
-      },
-      {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591056/Ultimate%20Portfolio/Mapuches/toqui_uzvbhk.svg",
-        "alt": "Flat illustration of a man holdinf a stick with indigenous features in warm colors" 
-      },
-      {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591056/Ultimate%20Portfolio/Mapuches/cards-back_n7nxkf.svg",
-        "alt": "Card examples" 
-      },
-      {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591054/Ultimate%20Portfolio/Mapuches/cards-examples_piflef.svg",
-        "alt": "Card examples" 
-      }
-    ]
-  },
+  
   {
     title: "Risk Management II.",
     description: "Illustration set for magazine publication on Risk Management II. \r\n Conceptualization of topics such as Failure to Pay Back, Liquidity Bottleneck in the Business, Receivables Sales, Legal Situation in Germany and Europe, Credit Insurance, Guarantees, Debt Collection, Global Exposure Risks, Securing Company Loans, Credit Check, Direct Marketing, Investments, IT security, Compliance Manager, and Data Analysis",
@@ -436,6 +401,42 @@ export const Data = [
       {
         "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591691/Ultimate%20Portfolio/Risk%20II/collection_ffpl8h.svg",
         "alt": "Flat illustration of a security man holding a large magnet" 
+      }
+    ]
+  },
+  {
+    title: "Mapuches.",
+    description: "The genesis of this deck comes from my motivation to spread the Mapuche culture and try to awake interest and awareness on the history of this ethnic group that occupied plenty of the Chilean territory and to which I happen to be part of. \r\n I chose playing card because it is a widely ubiquitous artifact and most importantly, very flexible to be repurposed in many creative ways. \r\n I had a lot of fun synchronizing the reflected versions of each illustration to make it work as a mirror and a whole at the same time. \r\n #Wallmapu",
+    client: "Personal",
+    year: "2016",
+    path: "mapuches",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599591055/Ultimate%20Portfolio/Mapuches/mapuches-thumbnail_bamkq9.jpg",
+    width: 4,
+    height: 3,
+    "works": [
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591055/Ultimate%20Portfolio/Mapuches/machi_finntk.svg",
+        "alt": "Flat illustration" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591054/Ultimate%20Portfolio/Mapuches/lonko_vsxbh4.svg",
+        "alt": "Flat illustration of a woman with indigenous features in cool colors" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591054/Ultimate%20Portfolio/Mapuches/machi-2_tshcue.svg",
+        "alt": "Flat illustration of a woman with indigenous features in cool colors" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591056/Ultimate%20Portfolio/Mapuches/toqui_uzvbhk.svg",
+        "alt": "Flat illustration of a man holdinf a stick with indigenous features in warm colors" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591056/Ultimate%20Portfolio/Mapuches/cards-back_n7nxkf.svg",
+        "alt": "Card examples" 
+      },
+      {
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591054/Ultimate%20Portfolio/Mapuches/cards-examples_piflef.svg",
+        "alt": "Card examples" 
       }
     ]
   },

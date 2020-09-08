@@ -35,4 +35,16 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.text};
     transition: all 0.3s linear;
   }
+  .overlay {
+    background: ${({ theme }) => theme.body};
+    transition: all 0.3s linear;
+  }
+  .navigation {
+    background: ${({ theme }) => theme.body};
+    transition: all 0.3s linear;
+  }
+  .navigation a {
+    color: ${({ theme }) => theme.text};
+    transition: all 0.3s linear;
+  }
   `
