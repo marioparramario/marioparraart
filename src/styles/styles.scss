@@ -62,3 +62,24 @@
 .titled {
   display: none;
 }
+
+
+
+@media (max-width: $phone) {
+  .card-content-container.open {
+    top: 80px;
+    padding: 0 20px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .text-container {
+      position: relative;
+      p {
+        display: none;
+      }
+    }
+  }
+}

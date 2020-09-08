@@ -26,3 +26,18 @@
     }
   }
 }
+
+@media (max-width: $phone) {
+  .social {
+    width: 100%;
+    justify-content: space-between;
+    a {
+      width: 100%;
+      font-size: 16px;
+      padding: 0;
+      &::before {
+        content: none;
+      }
+    }
+  }
+}

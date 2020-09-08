@@ -128,3 +128,26 @@ span, .mono {
 .above {
   z-index: 2
 }
+
+@media (max-width: $phone) {
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .content-wrapper {
+    padding: 0 20px;
+  }
+  .container {
+    padding-top: 100px;
+    width: 100%;
+  }
+}
