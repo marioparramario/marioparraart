@@ -123,7 +123,7 @@ export const Data = [
         "alt": "Flat illustration of a woman talking on the phone leaning on a high chair and one of her hands on her waist" 
       },
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599581248/Ultimate%20Portfolio/Foodora/oops-page_i72jnr.svg",
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599659236/Ultimate%20Portfolio/Foodora/oops-page_ub8xvq.svg",
         "alt": "Flat illustration of a boy sitting at a table with his teddy bear, looking at the floor where a slice bread lies" 
       },
       {
@@ -147,7 +147,7 @@ export const Data = [
         "alt": "Flat illustration of a woman with curly red hair wearing a pajama connecting two cables" 
       },
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599581245/Ultimate%20Portfolio/Foodora/404-page_epm6i9.svg",
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599659236/Ultimate%20Portfolio/Foodora/404-page_d02x63.svg",
         "alt": "" 
       }
     ]
@@ -451,8 +451,8 @@ export const Data = [
     height: 7,
     "works": [
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1596484588/illustration/economy-2/economy-2-07_yztnhm.jpg",
-        "alt": "https://res.cloudinary.com/oqdesign/image/upload/v1599597966/Ultimate%20Portfolio/Economy%20II/economy-2-thumbnail_nu600k.jpg" 
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599597979/Ultimate%20Portfolio/Economy%20II/robotics_ccvzhv.svg",
+        "alt": "" 
       },
       {
         "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599579343/Ultimate%20Portfolio/Economy%20II/1-lead_kcczgt.svg",
@@ -473,7 +473,7 @@ export const Data = [
       {
         "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599579342/Ultimate%20Portfolio/Economy%20II/events_ckqoqt.svg",
         "alt": "Flat illustration of a woman and a man, walking, well dressed talking about business" 
-      },
+      }
     ]
   },
 
@@ -568,7 +568,7 @@ export const Data = [
       {
         "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599579611/Ultimate%20Portfolio/Energy/buffering_h6zdlj.svg",
         "alt": "Flat illustration of a man and a woman pushing the planet" 
-      },
+      }
 
     ]
   }

@@ -11,6 +11,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
 }
+a:focus {
+  outline: none; }
+
 .title-container {
   position: absolute;
   top: 0;
