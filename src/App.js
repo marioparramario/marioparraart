@@ -45,7 +45,7 @@ export default function App() {
       <>
         <GlobalStyles />
 
-        <AnimateSharedLayout type="crossfade">
+        {/* <AnimateSharedLayout type="crossfade"> */}
           <Navbar />
           <AnimatePresence exitBeforeEnter>
           <Router>
@@ -54,7 +54,7 @@ export default function App() {
           </AnimatePresence>
           <Toggle theme={theme} toggleTheme={themeToggler} />
           <Footer />
-        </AnimateSharedLayout>
+        {/* </AnimateSharedLayout> */}
       </>
     </ThemeProvider>
   );
