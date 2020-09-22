@@ -154,4 +154,9 @@ span, .mono {
     padding-top: 100px;
     width: 100%;
   }
+  .button {
+    bottom: auto;
+    top: 36px;
+    z-index: 991;
+  }
 }

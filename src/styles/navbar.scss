@@ -53,26 +53,7 @@
     //   left: 0;
     // }
   }
-  .menu {
-    height: 40px;
-    width: 40px;
-    position: relative;
-    cursor: pointer;
-    z-index: 10;
-    display: none;
-    .line {
-      width: 32px;
-      height: 2px;
-      position: absolute;
-      top: 13px;
-      right: 0;
-      background: white;
-      &:nth-of-type(2) {
-        top: auto;
-        bottom: 13px;
-      }
-    }
-  }
+
   .svg-logo {
     display: block;
   }
@@ -82,22 +63,7 @@
 }
 
 .navigation {
-  // font-size: 0.8rem;
-  // height: 32px;
-  // position: fixed;
-  // width: 100%;
-  // max-width: $desktop;
-  // width: 90%;
-  // top: 96px;
-  // top: 128px;
-  // left: 0;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // background: white;
-  // z-index: 9;
-  // .flex a:nth-of-type(1) {
-  //   margin-right: 20px;
-  // }
+
   a {
     cursor: pointer;
     // text-indent: 100%;
@@ -122,21 +88,29 @@
       padding: 0 20px;
     }
     .logo {
-      width: 56px;
+      width: 54px;
     }
     .link {
+      margin-right: 30px;
       a {
         margin-left: 22px;
-        font-size: 17px;
+        font-size: 16px;
       }
     }
   }
   .navigation {
+    position: fixed;
+    width: calc(100% - 40px);
     top: 80px;
-    height: 22px;
+    height: 20px;
+    z-index: 9;
     a {
       font-size: 11px;
-      width: 100%;
+      // width: 100%;
     }
+  }
+  .svg-cross {
+    width: 16px;
+    height: 16px;
   }
 }

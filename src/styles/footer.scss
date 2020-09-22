@@ -38,15 +38,21 @@
   .footer {
     padding: 20px;
     width: auto;
+    &-info a {
+      font-size: 16px;
+    }
     &-container {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
     .social {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      width: 100%;
+      margin: 20px 0;
+    justify-content: space-between;
+    a {
+      font-size: 15px;
+    }
     }
   }
 }
