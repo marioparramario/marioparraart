@@ -17,11 +17,10 @@
     &::before {
       content: '';
       position: absolute;
-      top: auto;
       right: 0;
-      bottom: auto;
+      bottom: 4px;
       left: 0;
-      width: 1px;
+      width: 2px;
       height: 13px;
     }
   }
@@ -35,8 +34,15 @@
       width: 100%;
       font-size: 16px;
       padding: 0;
+      display: inline-block;
       &::before {
         content: none;
+      }
+      &:nth-of-type(2) {
+        text-align: center;
+      }
+      &:nth-of-type(3) {
+        text-align: right;
       }
     }
   }

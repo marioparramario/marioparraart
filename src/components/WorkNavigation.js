@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import "../styles/navbar.scss";
 import { workDetailNavigation } from "../helpers/Animations";
 import { Data } from "../data/Data";
+import Cross from "./Cross";
 
 export function WorkNavigation({ workId, onClose }) {
   const [prev, next] = Data.reduce((list, work, index, data) => {
@@ -24,15 +25,15 @@ export function WorkNavigation({ workId, onClose }) {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="navigation flex justify-between align-start"
+      className="navigation flex justify-end"
     >
-      <div className="flex">
+      {/* <div className="flex">
         <a className="mono" href={`/${prev.path}`}>Prev</a>
         <a className="mono" href={`/${next.path}`}>Next</a>
-      </div>
+      </div> */}
       {/* <Link className="mono" to="/">Close project</Link> */}
       <a className="mono" onClick={onClose}>
-        Close project
+        <Cross />
       </a>
     </motion.nav>
   );

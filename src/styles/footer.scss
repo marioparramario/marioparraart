@@ -18,17 +18,19 @@
     }
     a {
       font-size: 20px;
+      font-weight: $font-semi-bold;
     }
   }
   .social {
     align-items: center;
     justify-self: end;
     a {
-      font-family: $roboto;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: normal;
-      font-size: 12px;
+      // font-family: $roboto;
+      // letter-spacing: 3px;
+      // text-transform: uppercase;
+      // font-weight: normal;
+      font-size: 18px;
+      font-weight: $font-semi-bold;
     }
   } 
 }

@@ -71,7 +71,7 @@ export function Item({ id }) {
         id={id}
         className="card-content-container open flex vertical align-center"
       >
-        <WorkNavigation workId={id} onClose={onClose} />
+        
         <div className="container">
           <motion.div
             variants={textContainerWorks}
@@ -80,6 +80,7 @@ export function Item({ id }) {
             exit="exit"
             className="text-container"
           >
+            <WorkNavigation workId={id} onClose={onClose} />
             <motion.h3 variants={textComponentsWorks}>{title}</motion.h3>
             <motion.p variants={textComponentsWorks} className="text">
               {description}

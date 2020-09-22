@@ -82,41 +82,52 @@
 }
 
 .navigation {
-  font-size: 0.8rem;
-  height: 32px;
-  position: fixed;
+  // font-size: 0.8rem;
+  // height: 32px;
+  // position: fixed;
   // width: 100%;
-  max-width: $desktop;
-  width: 90%;
-  top: 96px;
+  // max-width: $desktop;
+  // width: 90%;
+  // top: 96px;
   // top: 128px;
   // left: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  z-index: 9;
-  .flex a:nth-of-type(1) {
-    margin-right: 20px;
-  }
+  // left: 50%;
+  // transform: translateX(-50%);
+  // background: white;
+  // z-index: 9;
+  // .flex a:nth-of-type(1) {
+  //   margin-right: 20px;
+  // }
   a {
     cursor: pointer;
+    // text-indent: 100%;
+    // white-space: nowrap;
+    // overflow: hidden;
   }
+}
+.svg-cross {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: $black;
+  stroke-width: 2px;
+  stroke-miterlimit: 10;
 }
 
 @media (max-width: $phone) {
   .navbar {
     height: 80px;
     .wrapper {
-      width: auto;
+      // width: auto;
       padding: 0 20px;
     }
     .logo {
-      width: 60px;
+      width: 56px;
     }
     .link {
       a {
-        margin-left: 20px;
-        font-size: 18px;
+        margin-left: 22px;
+        font-size: 17px;
       }
     }
   }
@@ -125,6 +136,7 @@
     height: 22px;
     a {
       font-size: 11px;
+      width: 100%;
     }
   }
 }
