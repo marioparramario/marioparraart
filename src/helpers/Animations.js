@@ -89,7 +89,7 @@ export const reallySimple = {
 };
 
 // Work Navigation
-export const workDetailNavigation = {
+export const workDetailClose = {
   initial: { 
     // y: 0,
     scale: 0
@@ -105,6 +105,29 @@ export const workDetailNavigation = {
   exit: {
     // y: 0,
     scale: 0,
+    transition: {
+      duration: 0.1,
+      delay: 0
+    }
+  },
+}
+
+export const workDetailNavigation = {
+  initial: { 
+    // y: 0,
+    opacity: 0
+  },
+  animate: {
+    // y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.4,
+      delay: 0.6
+    }
+  },
+  exit: {
+    // y: 0,
+    opacity: 0,
     transition: {
       duration: 0.1,
       delay: 0

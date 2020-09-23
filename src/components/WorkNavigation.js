@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
 import "../styles/navbar.scss";
-import { workDetailNavigation } from "../helpers/Animations";
+import { workDetailNavigation, workDetailClose } from "../helpers/Animations";
 import { Data } from "../data/Data";
 import Cross from "./Cross";
 
@@ -20,20 +20,25 @@ export function WorkNavigation({ workId, onClose }) {
   }, []);
 
   return (
-    <nav className="navigation flex justify-end">
+    <motion.nav 
+    variants={workDetailNavigation}
+    initial="initial"
+    animate="animate"
+    exit="exit"
+    className="navigation flex justify-end">
       {/* <div className="flex">
         <a className="mono" href={`/${prev.path}`}>Prev</a>
         <a className="mono" href={`/${next.path}`}>Next</a>
       </div> */}
       {/* <Link className="mono" to="/">Close project</Link> */}
       <motion.a
-        variants={workDetailNavigation}
+        variants={workDetailClose}
         initial="initial"
         animate="animate"
         exit="exit"
         onClick={onClose}>
         <Cross />
       </motion.a>
-    </nav>
+    </motion.nav>
   );
 }
