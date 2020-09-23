@@ -2,8 +2,6 @@
 
 .navbar {
   position: fixed;
-
-  // background: white;
   height: 96px;
   width: 100%;
   top: 0;
@@ -24,34 +22,19 @@
     white-space: nowrap;
     overflow: hidden;
     font-size: 0;
-    // svg {
-    //   width: 100%;
-    //   path, polygon {
-    //     fill: $black;
-    //   }
-    // }
   }
   .link {
+    margin-right: 20px;
     &-container {
       position: relative;
       
     }
     a {
-      // margin-left: 64px;
       margin-left: 44px;
       font-size: 20px;
       cursor: pointer;
-      // color: $black;
       position: relative;
     }
-    // .outline {
-    //   position: absolute;
-    //   background: pink;
-    //   height: 10px;
-    //   width: 100%;
-    //   bottom: -20px;
-    //   left: 0;
-    // }
   }
 
   .svg-logo {
@@ -63,23 +46,32 @@
 }
 
 .navigation {
-
   a {
     cursor: pointer;
-    // text-indent: 100%;
-    // white-space: nowrap;
-    // overflow: hidden;
   }
 }
 .svg-cross {
   width: 20px;
   height: 20px;
   fill: none;
-  stroke: $black;
+  // stroke: $black;
   stroke-width: 2px;
   stroke-miterlimit: 10;
 }
-
+@media (max-width: $tablet-small) {
+  .navbar {
+    height: 90px;
+    .wrapper {
+      padding: 0 30px;
+    }
+    .logo {
+      width: 78px;
+    }
+    .link {
+      margin-right: 40px;
+    }
+  } 
+}   
 @media (max-width: $phone) {
   .navbar {
     height: 80px;

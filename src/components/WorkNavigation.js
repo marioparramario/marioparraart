@@ -10,31 +10,30 @@ export function WorkNavigation({ workId, onClose }) {
   const [prev, next] = Data.reduce((list, work, index, data) => {
     if (work.path === workId) {
       const prevIndex = index === 0 ? data.length - 1 : index - 1;
-      const nextIndex = index === data.length - 1 ? 0 : index + 1; 
+      const nextIndex = index === data.length - 1 ? 0 : index + 1;
       return [
         data[prevIndex],
         data[nextIndex]
       ]
     }
-    return [ ...list ];
+    return [...list];
   }, []);
 
   return (
-    <motion.nav
-      variants={workDetailNavigation}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      className="navigation flex justify-end"
-    >
+    <nav className="navigation flex justify-end">
       {/* <div className="flex">
         <a className="mono" href={`/${prev.path}`}>Prev</a>
         <a className="mono" href={`/${next.path}`}>Next</a>
       </div> */}
       {/* <Link className="mono" to="/">Close project</Link> */}
-      <a className="mono" onClick={onClose}>
+      <motion.a
+        variants={workDetailNavigation}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        onClick={onClose}>
         <Cross />
-      </a>
-    </motion.nav>
+      </motion.a>
+    </nav>
   );
 }

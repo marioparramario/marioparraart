@@ -112,9 +112,10 @@ p {
   width: 14px;
   height: 14px;
   position: fixed;
-  bottom: 62px;
+  bottom: auto;
+  top: 44px;
+  z-index: 991;
   right: 20px;
-  z-index: 9;
   cursor: pointer;
   div {
     width: 100%;
@@ -131,6 +132,46 @@ span, .mono {
 .above {
   z-index: 2
 }
+@media (max-width: $desktop) {
+  p {
+    font-size: 18px;
+  }
+}
+@media (max-width: $tablet) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 17px;
+  }
+}
+@media (max-width: $tablet-small) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .content-wrapper {
+    padding: 0 30px;
+  }
+  .container {
+    padding-top: 120px;
+    width: 100%;
+  }
+  .button {
+    top: 40px;
+  }
+}
+
+
+
 
 @media (max-width: $phone) {
   h1 {
@@ -152,11 +193,8 @@ span, .mono {
   }
   .container {
     padding-top: 100px;
-    width: 100%;
   }
   .button {
-    bottom: auto;
     top: 36px;
-    z-index: 991;
   }
 }
