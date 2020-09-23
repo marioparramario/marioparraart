@@ -52,8 +52,13 @@
   .footer {
     padding: 20px;
     width: auto;
-    &-info a {
-      font-size: 16px;
+    &-info {
+      a {
+        font-size: 16px;
+      }
+      span {
+        font-size: 9px;
+      }
     }
     &-container {
       // display: flex;
