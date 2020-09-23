@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import ReactGA from 'react-ga';
 import { useDarkMode } from "./components/useDarkMode"
 import { GlobalStyles } from "./components/Globalstyle";
 import { lightTheme, darkTheme } from "./components/Themes"
@@ -15,14 +16,25 @@ import { About } from "./pages/about";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { enableBodyScroll } from "body-scroll-lock";
 
+
+ReactGA.initialize('UA-176781780-1');
+
+
+
+
+
 function Store({ match }) {
   let { id } = match.params;
   const imageHasLoaded = true;
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   switch (id) {
     case 'about':
       return <About />
     default:
       enableBodyScroll(document.querySelector(".this-class-proves-that-this-doesnt-work"))
+
       return (
         <>
           <List selectedId={id} />
