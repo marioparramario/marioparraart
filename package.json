@@ -1,0 +1,29 @@
+{
+  "name": "mario-parra-art",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "test": "jest",
+    "build": "next build",
+    "start": "next start",
+    "stubs": "stubby -d stubby.config.json -w",
+    "export": "next export"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "framer-motion": "latest",
+    "next": "latest",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-justified-grid": "^1.0.0",
+    "scroll-into-view": "^1.15.0",
+    "styled-components": "^5.2.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "jest": "^26.4.2",
+    "sass": "^1.26.11",
+    "stubby": "^5.0.0"
+  }
+}
