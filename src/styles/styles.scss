@@ -1,0 +1,86 @@
+@import "variables.scss";
+
+.card-content-container {
+  .container {
+    padding: 0;
+    // width: 100%;
+    // background: red;
+    // background: transparent;
+  }
+  h3 {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+  }
+}
+
+.card-content-container.open {
+  // top: 96px;
+  top: 128px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  overflow: scroll;
+  overflow: auto;
+  // padding-top: 40px;
+.container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 60px;
+  align-items: start;
+  justify-items: start;
+  margin-bottom: 200px;
+}
+  .card-image-container {
+    width: 100%;
+    img {
+      width: inherit;
+
+    }
+    // svg {
+    //   width: initial;
+    // }
+  }
+
+}
+
+
+.card-open-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.something-here {
+  // display: inline-block;
+  // background: red;
+}
+.titled {
+  display: none;
+}
+
+
+
+@media (max-width: $tablet-small) {
+  .card-content-container.open {
+    top: 80px;
+    padding: 0 20px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .text-container {
+      position: relative;
+      margin-top: 20px;
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

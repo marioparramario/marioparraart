@@ -1,0 +1,20 @@
+@import "variables.scss";
+
+.welcome {
+  margin-bottom: 60px;
+  .text {
+    max-width: 800px;
+  }
+  &-info {
+    padding-top: 50px;
+  }
+}
+@media (max-width: $phone) {
+  .welcome {
+    margin-bottom: 40px;
+    &-info {
+      
+      padding-top: 20px;
+    }
+  }
+}

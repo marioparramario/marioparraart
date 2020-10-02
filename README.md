@@ -1,3 +1,2 @@
 # Mario Parra Art
-
-Pretty awesome Portfolio
+This is my new portfolio
