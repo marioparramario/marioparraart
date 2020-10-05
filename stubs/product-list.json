@@ -1,0 +1,103 @@
+{
+  "success": true,
+  "code": 200,
+  "message": " Lista recuperada satisfactoriamente ",
+  "product": [
+    {
+      "delivery": true,
+      "status": true,
+      "_id": "5f179645bcf9a80018a05a7b",
+      "name": "producto1",
+      "description": "description of product",
+      "amount": 12,
+      "stock": 123,
+      "radius": 12,
+      "createdAt": "2020-07-22T01:28:37.252Z",
+      "shortcut": "product/producto1",
+      "__v": 0
+    },
+    {
+      "delivery": true,
+      "status": true,
+      "_id": "5f179655bcf9a80018a05a7c",
+      "name": "producto2",
+      "description": "description of product",
+      "amount": 132,
+      "stock": 123,
+      "radius": 12,
+      "createdAt": "2020-07-22T01:28:53.662Z",
+      "shortcut": "product/producto2",
+      "__v": 0
+    },
+    {
+      "delivery": true,
+      "status": true,
+      "_id": "5f22e9f58fd29700185c8860",
+      "name": "producto2",
+      "description": "description of product",
+      "amount": 12,
+      "stock": 123,
+      "radius": 12,
+      "createdAt": "2020-07-30T15:40:37.367Z",
+      "shortcut": "product/producto2",
+      "__v": 0,
+      "photo": "/uploads/products/rfLv8AMcAoiMGfi-1598465351601.58"
+    },
+    {
+      "delivery": false,
+      "status": true,
+      "_id": "5f2dc7c6dfb607001dbb76ee",
+      "name": "react native",
+      "description": "Curso de Real Native",
+      "amount": 3000,
+      "stock": 10,
+      "radius": 1,
+      "createdAt": "2020-08-07T21:29:42.657Z",
+      "shortcut": "product/react native",
+      "__v": 0,
+      "partnership": "5f2dc73adfb607001dbb76ed",
+      "subcategory": "5f2de1f0dfb607001dbb7710"
+    },
+    {
+      "delivery": true,
+      "status": true,
+      "_id": "5f32c994471de1001c0f3735",
+      "name": "producto2",
+      "description": "description of product",
+      "amount": 12,
+      "stock": 123,
+      "radius": 12,
+      "createdAt": "2020-08-11T16:38:44.105Z",
+      "shortcut": "product/producto2",
+      "__v": 0
+    },
+    {
+      "delivery": true,
+      "status": true,
+      "_id": "5f3ee7907fb39d001d45cf33",
+      "name": "Sándwich la gringa",
+      "description": "Carne a elección, queso cheddar, tocino, cebolla caramelizda, pepinillos y salsa BBQ.",
+      "amount": 3990,
+      "stock": 123,
+      "radius": 12,
+      "createdAt": "2020-08-20T21:13:52.745Z",
+      "shortcut": "product/sandwich la gringa",
+      "__v": 0,
+      "subcategory": "5f3ee5ee7fb39d001d45cf32",
+      "partnership": "5f3eec587fb39d001d45cf35"
+    },
+    {
+      "delivery": true,
+      "status": true,
+      "_id": "5f46e8578bdca300180ed584",
+      "name": "sándwich súper beef",
+      "description": "Carne a elección, lechuga, tomate en rodajas, cebolla morada, palta y mayonesa casera Otto's.",
+      "amount": 3.99,
+      "stock": 123,
+      "radius": 12,
+      "createdAt": "2020-08-26T22:55:19.332Z",
+      "shortcut": "product/sándwich súper beef",
+      "__v": 0
+    }
+  ]
+}
