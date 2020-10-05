@@ -55,14 +55,13 @@ export function Item({ item, setItemSelected }) {
       setItemSelected(null);
     }, scrollTime);
   };
-  console.log(`card-image-container-${path}`);
+  console.log(`work-image-container-${path}`);
   return (
     <>
       <div
         id={id}
-        className="card-content-container open flex vertical align-center"
+        className="work-content-container open flex vertical align-center"
       >
-        
         <div className="container">
           <motion.div
             variants={textContainerWorks}
@@ -88,8 +87,8 @@ export function Item({ item, setItemSelected }) {
                 // ease: [0.43, 0.13, 0.23, 0.96],
                 ease: [0.59, 0.12, 0, 0.95],
               }}
-              className="card-image-container"
-              layoutId={`card-image-container-${path}`}
+              className="work-image-container"
+              layoutId={`work-image-container-${path}`}
             >
               <img src={src} alt={alt} />
             </motion.div>
@@ -107,18 +106,6 @@ export function Item({ item, setItemSelected }) {
         exit="exit"
         className="overlay"
       ></motion.div>
-
-      {/* <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0, transition: { duration: 2 } }}
-        transition={{ duration: 2 }}
-        style={{ pointerEvents: "auto" }}
-        className="overlay"
-      >
-        <Link to="/" />
-        <div className="card-content-container flex-vertical open"></div>
-      </motion.div> */}
     </>
   );
 }

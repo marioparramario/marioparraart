@@ -10,10 +10,10 @@ const About = (props) => (
   <SEOLayout>
     <main>
       <motion.section
-        // variants={reallySimple}
+        variants={reallySimple}
         initial="initial"
         animate="animate"
-        exit={{ opacity: 0 }}
+        exit="exit"
         className="about flex-vertical"
       >
         <div className="container">

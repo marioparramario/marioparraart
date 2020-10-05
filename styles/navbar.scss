@@ -27,7 +27,6 @@
     margin-right: 20px;
     &-container {
       position: relative;
-      
     }
     a {
       margin-left: 44px;
@@ -36,7 +35,6 @@
       position: relative;
     }
   }
-
   .svg-logo {
     display: block;
   }
@@ -44,7 +42,6 @@
     display: none;
   }
 }
-
 .navigation {
   a {
     cursor: pointer;
@@ -54,7 +51,6 @@
   width: 20px;
   height: 20px;
   fill: none;
-  // stroke: $black;
   stroke-width: 2px;
   stroke-miterlimit: 10;
 }
@@ -76,7 +72,6 @@
   .navbar {
     height: 80px;
     .wrapper {
-      // width: auto;
       padding: 0 20px;
     }
     .logo {
@@ -98,7 +93,6 @@
     z-index: 9;
     a {
       font-size: 11px;
-      // width: 100%;
     }
   }
   .svg-cross {

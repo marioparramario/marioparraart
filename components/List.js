@@ -3,7 +3,7 @@ import JustifiedGrid from "react-justified-grid";
 import { motion } from "framer-motion";
 
 import { Welcome } from "./Welcome";
-import { imageHover, titleHover } from "../helpers/Animations";
+import { imageHover, titleHover, reallySimple } from "../helpers/Animations";
 
 export function List({ products, itemSelected, setItemSelected }) {
   const handleWorkClick = (event, workId) => {
@@ -13,10 +13,11 @@ export function List({ products, itemSelected, setItemSelected }) {
   };
 
   return (
-    <motion.main
+    <motion.div
+      variants={reallySimple}
       initial="initial"
       animate="animate"
-      exit={{ opacity: 0 }}
+      exit="exit"
       className={`content-wrapper flex-vertical ${
         itemSelected ? "illustration-open" : ""
       }`}
@@ -39,7 +40,7 @@ export function List({ products, itemSelected, setItemSelected }) {
                 return (
                   <div
                     key={path}
-                    className="card-content-container flex vertical align-center"
+                    className="work-content-container flex vertical align-center"
                   >
                     <motion.div
                       transition={{
@@ -47,8 +48,8 @@ export function List({ products, itemSelected, setItemSelected }) {
                         delay: 0.9,
                         ease: [0.59, 0.12, 0, 0.95],
                       }}
-                      className="card-image-container"
-                      layoutId={`card-image-container-${path}`}
+                      className="work-image-container"
+                      layoutId={`work-image-container-${path}`}
                       style={{
                         position: "absolute",
                         left: left,
@@ -64,7 +65,7 @@ export function List({ products, itemSelected, setItemSelected }) {
                         <a
                           href="#"
                           onClick={(event) => handleWorkClick(event, id)}
-                          className={`card-open-link`}
+                          className={`work-open-link`}
                         />
                         <motion.img
                           initial="rest"
@@ -86,6 +87,6 @@ export function List({ products, itemSelected, setItemSelected }) {
           )}
         </JustifiedGrid>
       </div>
-    </motion.main>
+    </motion.div>
   );
 }
