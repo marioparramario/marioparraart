@@ -43,6 +43,7 @@ export function List({ products, itemSelected, setItemSelected }) {
                     className="work-content-container flex vertical align-center"
                   >
                     <motion.div
+                      key={path}
                       transition={{
                         type: "tween",
                         delay: 0.9,

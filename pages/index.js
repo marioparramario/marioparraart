@@ -20,13 +20,11 @@ const Index = ({ products }) => {
     <SEOLayout>
       <main>
         <section>
-          {itemSelected === null && (
-            <List
-              products={products}
-              item={itemSelected}
-              setItemSelected={setItemSelected}
-            />
-          )}
+          <List
+            products={products}
+            item={itemSelected}
+            setItemSelected={setItemSelected}
+          />
           {itemSelected && (
             <Item item={itemSelected} setItemSelected={setItemSelected} />
           )}

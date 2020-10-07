@@ -55,7 +55,7 @@ export function Item({ item, setItemSelected }) {
       setItemSelected(null);
     }, scrollTime);
   };
-  console.log(`work-image-container-${path}`);
+
   return (
     <>
       <div
@@ -76,13 +76,12 @@ export function Item({ item, setItemSelected }) {
               {description}
             </motion.p>
           </motion.div>
-          {/* <div className="wrapper flex"> */}
 
           <div className="images">
             <motion.div
               transition={{
                 type: "tween",
-                // delay: 0.9,
+                delay: 0.9,
                 duration: 1,
                 // ease: [0.43, 0.13, 0.23, 0.96],
                 ease: [0.59, 0.12, 0, 0.95],
@@ -95,9 +94,7 @@ export function Item({ item, setItemSelected }) {
             {works ? works.map(workItem) : null}
           </div>
         </div>
-        {/* <Link to="/">Go back!</Link> */}
       </div>
-      {/* </div> */}
 
       <motion.div
         variants={overlayWorks}
