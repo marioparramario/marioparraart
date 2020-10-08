@@ -1,16 +1,12 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import JustifiedGrid from "react-justified-grid";
 import { motion } from "framer-motion";
 
 import { Welcome } from "./Welcome";
 import { imageHover, titleHover, reallySimple } from "../helpers/Animations";
 
-export function List({ products, itemSelected, setItemSelected }) {
-  const handleWorkClick = (event, workId) => {
-    event.preventDefault();
-    console.log(1)
-    setItemSelected(products.find((item) => item.id === workId) || null);
-  };
+export function List({ products, itemSelected }) {
 
   return (
     <motion.div
@@ -42,15 +38,9 @@ export function List({ products, itemSelected, setItemSelected }) {
                     key={path}
                     className="work-content-container flex vertical align-center"
                   >
-                    <motion.div
+                    <div
                       key={path}
-                      transition={{
-                        type: "tween",
-                        delay: 0.9,
-                        ease: [0.59, 0.12, 0, 0.95],
-                      }}
                       className="work-image-container"
-                      layoutId={`work-image-container-${path}`}
                       style={{
                         position: "absolute",
                         left: left,
@@ -63,24 +53,26 @@ export function List({ products, itemSelected, setItemSelected }) {
                         animate="rest"
                         className="hover-container"
                       >
-                        <a
-                          href="#"
-                          onClick={(event) => handleWorkClick(event, id)}
-                          className={`work-open-link`}
-                        />
-                        <motion.img
-                          initial="rest"
-                          variants={imageHover}
-                          src={src}
-                          width={width}
-                          height={height}
-                          alt={alt}
-                        />
+                        <Link
+                          href="/illustration/[path]"
+                          as={`/illustration/${path}`}
+                          scroll={false}
+                        >
+                          <motion.img
+                            initial="rest"
+                            variants={imageHover}
+                            src={src}
+                            width={width}
+                            height={height}
+                            alt={alt}
+                          />
+                        </Link>
+
                         <motion.h3 initial="rest" variants={titleHover}>
                           {title}
                         </motion.h3>
                       </motion.div>
-                    </motion.div>
+                    </div>
                   </div>
                 );
               })}
