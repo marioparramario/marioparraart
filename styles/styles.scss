@@ -11,8 +11,9 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 a:focus {
-  outline: none;
+  outline: none !important;
 }
+
 .container {
   position: relative;
   max-width: $desktop;

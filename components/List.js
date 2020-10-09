@@ -53,8 +53,8 @@ export function List({ products, itemSelected }) {
                         className="hover-container"
                       >
                         <Link
-                          href="/illustration/[path]"
-                          as={`/illustration/${path}`}
+                          href="/work/[path]"
+                          as={`/work/${path}`}
                           scroll={false}
                         >
                           <motion.img

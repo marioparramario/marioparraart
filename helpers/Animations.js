@@ -146,9 +146,9 @@ export const textContainerWorks = {
 export const textComponentsWorks = {
   initial: {
     opacity: 0,
-    y: 10,
+    y: 6,
     transition: {
-      duration: 0.6,
+      duration: 0.4,
       type: "tween",
       ease: loquitoYoutube
     }
@@ -157,7 +157,7 @@ export const textComponentsWorks = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.4,
       type: "tween",
       ease: loquitoYoutube
     }
@@ -174,21 +174,21 @@ export const textComponentsWorks = {
 };
 
 
-export const imagesWork = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: { 
-      duration: 0.6,
-      // delay: 0.6
-    }
-  },
-  exit: {
-    opacity: 0,
-    transition: { 
-      duration: 0.4
-    }
-  }
-};
+// export const imagesWork = {
+//   initial: {
+//     opacity: 0,
+//   },
+//   animate: {
+//     opacity: 1,
+//     transition: { 
+//       duration: 0.6,
+//       // delay: 0.6
+//     }
+//   },
+//   exit: {
+//     opacity: 0,
+//     transition: { 
+//       duration: 0.4
+//     }
+//   }
+// };

@@ -14,6 +14,14 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     transition: all 0.3s linear;
   }
+  .active::before {
+    background: ${({ theme }) => theme.text};
+    transition: all 0.3s linear;
+  }
+    .svg-cross {
+    stroke: ${({ theme }) => theme.text};
+    transition: all 0.3s linear;
+  }
   path {
     fill: ${({ theme }) => theme.text};
     transition: all 0.3s linear;
