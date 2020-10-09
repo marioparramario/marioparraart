@@ -7,7 +7,8 @@ import { WorkNavigation } from "./WorkNavigation";
 import "scroll-into-view";
 
 import {
-  imagesWork,
+  reallySimple,
+  secondarySimple,
   textContainerWorks,
   textComponentsWorks
 } from "../helpers/Animations";
@@ -19,7 +20,7 @@ export function Item({ item, setItemSelected }) {
     // This are the images of the work
     <motion.img
       key={index}
-      variants={imagesWork}
+      variants={secondarySimple}
       initial="initial"
       animate="animate"
       exit="exit"
@@ -77,7 +78,7 @@ export function Item({ item, setItemSelected }) {
 
           <div className="images">
             <motion.div
-              variants={imagesWork}
+              variants={reallySimple}
               initial="initial"
               animate="animate"
               exit="exit"

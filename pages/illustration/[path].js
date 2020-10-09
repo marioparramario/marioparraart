@@ -7,7 +7,9 @@ import { getProducts } from "../../services/products";
 
 const Page = ({ item }) => {
   return (
-    <SEOLayout>
+    <SEOLayout
+    title={item.title}
+    metaContentDescription={item.description}>
       <main>
         <Item item={item}/>
       </main>

@@ -4,19 +4,14 @@ import JustifiedGrid from "react-justified-grid";
 import { motion } from "framer-motion";
 
 import { Welcome } from "./Welcome";
-import { imageHover, titleHover, reallySimple } from "../helpers/Animations";
+import { imageHover, titleHover, secondarySimple } from "../helpers/Animations";
 
 export function List({ products, itemSelected }) {
 
   return (
-    <motion.div
-      variants={reallySimple}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      className={`content-wrapper flex-vertical ${
-        itemSelected ? "illustration-open" : ""
-      }`}
+    <div
+      className={`content-wrapper flex-vertical ${itemSelected ? "illustration-open" : ""
+        }`}
     >
       <div className="container">
         <Welcome />
@@ -34,7 +29,11 @@ export function List({ products, itemSelected }) {
                 const { path, id, title } = products[index];
 
                 return (
-                  <div
+                  <motion.div
+                    variants={secondarySimple}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
                     key={path}
                     className="work-content-container flex vertical align-center"
                   >
@@ -73,13 +72,13 @@ export function List({ products, itemSelected }) {
                         </motion.h3>
                       </motion.div>
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })}
             </React.Fragment>
           )}
         </JustifiedGrid>
       </div>
-    </motion.div>
+    </div>
   );
 }

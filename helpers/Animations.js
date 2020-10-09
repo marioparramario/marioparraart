@@ -10,17 +10,60 @@ export const defaultAnimation = {
   initial: {},
   animate: {
     transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.6
+      staggerChildren: 0.1,
+      delayChildren: 0.2
+    }
+  },
+  exit: {},
+}
+export const reallySimple = {
+  initial: {
+    opacity: 0,
+    y: 6,
+    transition: {
+      duration: 0.4,
+    }
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
     }
   },
   exit: {
+    opacity: 0,
+    y: -6,
     transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.6
+      duration: 0.4,
     }
   },
-}
+};
+
+export const secondarySimple = {
+  initial: {
+    opacity: 0,
+    y: 6,
+    transition: {
+      duration: 0.4,
+    }
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.4,
+      duration: 0.4,
+    }
+  },
+  exit: {
+    opacity: 0,
+    y: -6,
+    transition: {
+      duration: 0.4,
+    }
+  },
+};
 
 export const imageHover = {
   rest: {
@@ -59,48 +102,8 @@ export const titleHover = {
 };
 
 
-export const simpleAnimation = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 2,
-      ease: easingCool, 
-      delay: 1
-    }
-  },
-  exit: {
-    opacity: 0,
-    transition: {
-      duration: 2,
-      ease: easingCool
-    }
-  },
-};
 
 
-export const reallySimple = {
-  initial: {
-    opacity: 0,
-    transition: {
-      duration: 0.4,
-    }
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 0.4,
-    }
-  },
-  exit: {
-    opacity: 0,
-    transition: {
-      duration: 0.4,
-    }
-  },
-};
 
 // Work Navigation
 export const workDetailClose = {
@@ -112,57 +115,32 @@ export const workDetailClose = {
     // y: 0,
     scale: 1,
     transition: {
-      duration: 0.1,
-      delay: 0.6
+      duration: 0.4,
+      delay: 0.4
     }
   },
   exit: {
     // y: 0,
     scale: 0,
     transition: {
-      duration: 0.1,
+      duration: 0.4,
       delay: 0
     }
   },
 }
 
-export const workDetailNavigation = {
-  initial: { 
-    // y: 0,
-    opacity: 0
-  },
-  animate: {
-    // y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.4,
-      delay: 0.6
-    }
-  },
-  exit: {
-    // y: 0,
-    opacity: 0,
-    transition: {
-      duration: 0.1,
-      delay: 0
-    }
-  },
-}
 
 
 export const textContainerWorks = {
   initial: {},
   animate: {
     transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.6
+      staggerChildren: 0.1,
+      delayChildren: 0.2
     }
   },
   exit: {
-    transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.6
-    }
+
   },
 }
 export const textComponentsWorks = {
@@ -170,7 +148,7 @@ export const textComponentsWorks = {
     opacity: 0,
     y: 10,
     transition: {
-      duration: 0.8,
+      duration: 0.6,
       type: "tween",
       ease: loquitoYoutube
     }
@@ -179,7 +157,7 @@ export const textComponentsWorks = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.8,
+      duration: 0.6,
       type: "tween",
       ease: loquitoYoutube
     }
@@ -203,7 +181,7 @@ export const imagesWork = {
   animate: {
     opacity: 1,
     transition: { 
-      duration: 1,
+      duration: 0.6,
       // delay: 0.6
     }
   },

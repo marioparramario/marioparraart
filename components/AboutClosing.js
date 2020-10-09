@@ -1,7 +1,14 @@
 import * as React from "react";
+import { motion } from "framer-motion";
+import { secondarySimple } from "../helpers/Animations";
 
 export const AboutClosing = () => (
-  <div className="about-closing">
+  <motion.div
+  variants={secondarySimple}
+  initial="initial"
+  animate="animate"
+  exit="exit"
+  className="about-closing">
     <div className="column hire">
       <h3>You can hire me for:</h3>
       <ul className="wrapper">
@@ -27,5 +34,5 @@ export const AboutClosing = () => (
         </li>
       </ul>
     </div>
-  </div>
+  </motion.div>
 );

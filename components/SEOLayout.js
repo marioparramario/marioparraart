@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import Head from "next/head";
 
-const metaContentDescription = 'Illustration porfolio of a Mario Parra, berlin-based freelancer with a focus on graphic design, digital illustrations, and UI/UX';
 export const SEOLayout = ({
   title = 'Mario Parra | Freelance Designer / Illustrator',
+  metaContentDescription = 'Illustration porfolio of a Mario Parra, berlin-based freelancer with a focus on graphic design, digital illustrations, and UI/UX',
   children,
 })  => (
   <Fragment>
