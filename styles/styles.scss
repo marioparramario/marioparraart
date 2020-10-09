@@ -24,30 +24,30 @@ a:focus {
   top: 0;
   color: white;
 }
-.overlay {
-  z-index: 1;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 8;
-  a {
-    display: block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
+// .overlay {
+//   z-index: 1;
+//   position: fixed;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: white;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 8;
+//   a {
+//     display: block;
+//     position: fixed;
+//     top: 0;
+//     bottom: 0;
+//     width: 100vw;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+// }
 a {
   color: $black;
   text-decoration: none;

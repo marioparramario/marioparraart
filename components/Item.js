@@ -9,8 +9,7 @@ import "scroll-into-view";
 import {
   imagesWork,
   textContainerWorks,
-  textComponentsWorks,
-  overlayWorks,
+  textComponentsWorks
 } from "../helpers/Animations";
 
 export function Item({ item, setItemSelected }) {
@@ -77,23 +76,27 @@ export function Item({ item, setItemSelected }) {
           </motion.div>
 
           <div className="images">
-            <div
+            <motion.div
+              variants={imagesWork}
+              initial="initial"
+              animate="animate"
+              exit="exit"
               className="work-image-container"
             >
               <img src={src} alt={alt} />
-            </div>
+            </motion.div>
             {works ? works.map(workItem) : null}
           </div>
         </div>
       </div>
 
-      <motion.div
+      {/* <motion.div
         variants={overlayWorks}
         initial="initial"
         animate="animate"
         exit="exit"
         className="overlay"
-      ></motion.div>
+      ></motion.div> */}
     </>
   );
 }
