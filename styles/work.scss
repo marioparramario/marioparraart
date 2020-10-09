@@ -8,28 +8,32 @@
     left: 18px;
     bottom: 18px;
   }
+  > div {
+    cursor: pointer;
+  }
 }
 
 .work-content-container.open {
-  top: 128px;
-  left: 0;
-  right: 0;
-  height: 100%;
-  position: fixed;
-  z-index: 9;
-  overflow: scroll;
-  overflow: auto;
+  padding-top: 128px;
+  // top: 128px;
+  // left: 0;
+  // right: 0;
+  // height: 100%;
+  // position: fixed;
+  // z-index: 9;
+  // overflow: scroll;
+  // overflow: auto;
   .container {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-gap: 60px;
     align-items: start;
     justify-items: start;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   } 
   .text-container {
     position: sticky;
-    top: 0;
+    top: 128px;
     h3 {
       position: static;
     }

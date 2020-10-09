@@ -7,10 +7,10 @@ import { WorkNavigation } from "./WorkNavigation";
 import "scroll-into-view";
 
 import {
-  imagesWork,
+  reallySimple,
+  secondarySimple,
   textContainerWorks,
-  textComponentsWorks,
-  overlayWorks,
+  textComponentsWorks
 } from "../helpers/Animations";
 
 export function Item({ item, setItemSelected }) {
@@ -20,7 +20,7 @@ export function Item({ item, setItemSelected }) {
     // This are the images of the work
     <motion.img
       key={index}
-      variants={imagesWork}
+      variants={secondarySimple}
       initial="initial"
       animate="animate"
       exit="exit"
@@ -51,8 +51,7 @@ export function Item({ item, setItemSelected }) {
     console.log("time to scroll", scrollTime);
 
     setTimeout(() => {
-      //router.push("/", "/", { shallow: true });
-      setItemSelected(null);
+      router.push("/", "/", { shallow: true });
     }, scrollTime);
   };
 
@@ -79,15 +78,11 @@ export function Item({ item, setItemSelected }) {
 
           <div className="images">
             <motion.div
-              transition={{
-                type: "tween",
-                delay: 0.9,
-                duration: 1,
-                // ease: [0.43, 0.13, 0.23, 0.96],
-                ease: [0.59, 0.12, 0, 0.95],
-              }}
+              variants={reallySimple}
+              initial="initial"
+              animate="animate"
+              exit="exit"
               className="work-image-container"
-              layoutId={`work-image-container-${path}`}
             >
               <img src={src} alt={alt} />
             </motion.div>
@@ -96,13 +91,13 @@ export function Item({ item, setItemSelected }) {
         </div>
       </div>
 
-      <motion.div
+      {/* <motion.div
         variants={overlayWorks}
         initial="initial"
         animate="animate"
         exit="exit"
         className="overlay"
-      ></motion.div>
+      ></motion.div> */}
     </>
   );
 }

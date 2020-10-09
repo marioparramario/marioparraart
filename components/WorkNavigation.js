@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { workDetailNavigation, workDetailClose } from "../helpers/Animations";
+import { workDetailClose } from "../helpers/Animations";
 import { Data } from "../data/Data";
 import Cross from "./Cross";
 
@@ -18,11 +18,7 @@ export function WorkNavigation({ workId, onClose }) {
   }, []);
 
   return (
-    <motion.nav 
-    variants={workDetailNavigation}
-    initial="initial"
-    animate="animate"
-    exit="exit"
+    <nav
     className="navigation flex justify-end">
       {/* <div className="flex">
         <a className="mono" href={`/${prev.path}`}>Prev</a>
@@ -40,6 +36,6 @@ export function WorkNavigation({ workId, onClose }) {
         </a>
  
       </motion.div>
-    </motion.nav>
+    </nav>
   );
 }

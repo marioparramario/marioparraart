@@ -3,24 +3,22 @@ import React from "react";
 import { SEOLayout } from "../components/SEOLayout";
 import { AboutIntro } from "../components/AboutIntro";
 import { AboutClosing } from "../components/AboutClosing";
-import { motion } from "framer-motion";
-import { reallySimple } from "../helpers/Animations";
+
+// import { Item } from "../components/Item";
 
 const About = (props) => (
-  <SEOLayout>
+  <SEOLayout
+  // title={Item.title}
+  >
     <main>
-      <motion.section
-        variants={reallySimple}
-        initial="initial"
-        animate="animate"
-        exit="exit"
+      <section
         className="about flex-vertical"
       >
         <div className="container">
           <AboutIntro />
           <AboutClosing />
         </div>
-      </motion.section>
+      </section>
     </main>
   </SEOLayout>
 );

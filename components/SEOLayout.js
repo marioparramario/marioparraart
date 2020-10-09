@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import Head from "next/head";
 
-const metaContentDescription = 'Illustration porfolio of a Mario Parra, berlin-based freelancer with a focus on graphic design, digital illustrations, and UI/UX';
 export const SEOLayout = ({
-  title = 'Mario Parra | Freelance Designer / Illustrator',
+  title = 'Mario Parra Portfolio | Illustrator',
+  metaContentDescription = 'I’m Mario Parra, a Chilean illustrator based in Berlin. I create digital illustrations with a focus on stylized characters built through simple and carefully crafted shapes',
   children,
 })  => (
   <Fragment>
