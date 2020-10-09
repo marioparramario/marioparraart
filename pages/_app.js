@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router'
 import { ThemeProvider } from 'styled-components';
-import { AnimatePresence } from 'framer-motion';
+import { AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 
 import { useDarkMode } from '../components/useDarkMode'
 import { GlobalStyles } from '../components/Globalstyle';
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
     <React.Fragment>
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
-
+        <AnimateSharedLayout>
           <Navbar />
           <AnimatePresence
             exitBeforeEnter
@@ -47,6 +47,7 @@ function MyApp({ Component, pageProps }) {
           </AnimatePresence>
           <Toggle theme={theme} toggleTheme={themeToggler} />
           <Footer />
+          </AnimateSharedLayout>
       </ThemeProvider>
     </React.Fragment>
   )

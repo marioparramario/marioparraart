@@ -77,23 +77,31 @@ export function Item({ item, setItemSelected }) {
           </motion.div>
 
           <div className="images">
-            <div
+            <motion.div
+              transition={{
+                type: "tween",
+                duration: 1,
+                // ease: [0.43, 0.13, 0.23, 0.96],
+                ease: [0.59, 0.12, 0, 0.95],
+              }}
               className="work-image-container"
+              // layoutId={`work-image-container-${path}`}
+              layoutId={`work-image-container-${path}`}
             >
               <img src={src} alt={alt} />
-            </div>
+            </motion.div>
             {works ? works.map(workItem) : null}
           </div>
         </div>
       </div>
 
-      <motion.div
+      {/* <motion.div
         variants={overlayWorks}
         initial="initial"
         animate="animate"
         exit="exit"
         className="overlay"
-      ></motion.div>
+      ></motion.div> */}
     </>
   );
 }
