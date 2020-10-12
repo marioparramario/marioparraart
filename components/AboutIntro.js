@@ -13,7 +13,7 @@ export const AboutIntro = () => (
     <motion.div
       variants={reallySimple}
       className="image">
-      <img src="https://res.cloudinary.com/oqdesign/image/upload/v1597872364/New%20Portdolio/about-15_afwuy7.jpg"></img>
+      <img src="https://res.cloudinary.com/oqdesign/image/upload/v1602528866/Ultimate%20Portfolio/General/about-21_cetay0.svg"></img>
     </motion.div>
     <motion.div
       variants={reallySimple}
