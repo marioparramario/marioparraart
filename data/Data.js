@@ -345,11 +345,11 @@ export const Data = [
         "alt": "Flat illustration of a woman in a futuristic environment touching screens on the left side. In the right, a phone with an eagle and large pixels" 
       },
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599578464/Ultimate%20Portfolio/Economy/smart-data_exu1g0.svg",
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1602522547/Ultimate%20Portfolio/Economy/smart-data_fvwyky.svg",
         "alt": "Flat illustration of a woman and a man in an office dealing with paperwork" 
       },
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599578465/Ultimate%20Portfolio/Economy/cover_jfztgi.svg",
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1602522739/Ultimate%20Portfolio/Economy/cover_g9zlk1.svg",
         "alt": "Flat illustration of a man scientist taking notes standing next to a robotic arm" 
       },
       {
@@ -387,7 +387,7 @@ export const Data = [
         "alt": "Flat illustration of a curly-haired woman doing balance" 
       },
       {
-        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1599591691/Ultimate%20Portfolio/Risk%20II/lead_syzwot.svg",
+        "path": "https://res.cloudinary.com/oqdesign/image/upload/v1602522931/Ultimate%20Portfolio/Risk%20II/lead_gwsoep.svg",
         "alt": "Flat illustration of a man falling and a giant hand receiving him" 
       },
       {
@@ -446,7 +446,7 @@ export const Data = [
     client: "Inpact Media",
     year: "2018",
     path: "ecomony-2",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602521122/Ultimate%20Portfolio/Economy%20II/economy-2-thumbnail_cljvuj.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602523247/Ultimate%20Portfolio/Economy%20II/economy-2-thumbnail_l3vuam.svg",
     width: 8,
     height: 7,
     "works": [
