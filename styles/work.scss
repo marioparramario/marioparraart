@@ -15,21 +15,13 @@
 
 .work-content-container.open {
   padding-top: 128px;
-  // top: 128px;
-  // left: 0;
-  // right: 0;
-  // height: 100%;
-  // position: fixed;
-  // z-index: 9;
-  // overflow: scroll;
-  // overflow: auto;
   .container {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-gap: 60px;
     align-items: start;
     justify-items: start;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   } 
   .text-container {
     position: sticky;
@@ -65,15 +57,26 @@
   cursor: pointer;
   z-index: 2;
 }
+@media (max-width: $tablet-small) {
+  .work-content-container.open {
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .text-container {
+      position: relative;
+      top: 0;
+    }
+  }
+}
 
 
 @media (max-width: $phone) {
   .work-content-container.open {
-    top: 80px;
-    padding: 0 20px;
+
+    padding-top: 80px;
     .container {
-      display: flex;
-      flex-direction: column;
     }
     .text-container {
       position: relative;

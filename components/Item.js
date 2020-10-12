@@ -56,48 +56,41 @@ export function Item({ item, setItemSelected }) {
   };
 
   return (
-    <>
-      <div
-        id={id}
-        className="work-content-container open flex vertical align-center"
-      >
-        <div className="container">
-          <motion.div
-            variants={textContainerWorks}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="text-container"
-          >
-            <WorkNavigation workId={id} onClose={onClose} />
-            <motion.h3 variants={textComponentsWorks}>{title}</motion.h3>
-            <motion.p variants={textComponentsWorks} className="text">
-              {description}
-            </motion.p>
-          </motion.div>
 
-          <div className="images">
+      <div className="content-wrapper">
+        <div
+          id={id}
+          className="work-content-container open flex vertical align-center"
+        >
+          <div className="container">
             <motion.div
-              variants={reallySimple}
+              variants={textContainerWorks}
               initial="initial"
               animate="animate"
               exit="exit"
-              className="work-image-container"
+              className="text-container"
             >
-              <img src={src} alt={alt} />
+              <WorkNavigation workId={id} onClose={onClose} />
+              <motion.h3 variants={textComponentsWorks}>{title}</motion.h3>
+              <motion.p variants={textComponentsWorks} className="text">
+                {description}
+              </motion.p>
             </motion.div>
-            {works ? works.map(workItem) : null}
+
+            <div className="images">
+              <motion.div
+                variants={reallySimple}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="work-image-container"
+              >
+                <img src={src} alt={alt} />
+              </motion.div>
+              {works ? works.map(workItem) : null}
+            </div>
           </div>
         </div>
       </div>
-
-      {/* <motion.div
-        variants={overlayWorks}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        className="overlay"
-      ></motion.div> */}
-    </>
   );
 }
