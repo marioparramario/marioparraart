@@ -9,12 +9,15 @@ export const AboutIntro = () => (
     animate="animate"
     exit="exit"
     className="about-intro">
+      <motion.img 
+      variants={reallySimple}
+      src="https://res.cloudinary.com/oqdesign/image/upload/v1602528866/Ultimate%20Portfolio/General/about-21_cetay0.svg"/>
 
-    <motion.div
+    {/* <motion.div
       variants={reallySimple}
       className="image">
-      <img src="https://res.cloudinary.com/oqdesign/image/upload/v1602528866/Ultimate%20Portfolio/General/about-21_cetay0.svg"></img>
-    </motion.div>
+      <img src="https://res.cloudinary.com/oqdesign/image/upload/v1602528866/Ultimate%20Portfolio/General/about-21_cetay0.svg"/>
+    </motion.div> */}
     <motion.div
       variants={reallySimple}
       className="about-intro-text">
