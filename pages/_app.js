@@ -9,12 +9,11 @@ import { lightTheme, darkTheme } from '../components/Themes'
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import Toggle from '../components/Toggle';
-
+import '../styles/normalize.scss';
 import '../styles/layout.scss';
 import '../styles/styles.scss';
 import '../styles/footer.scss';
 import '../styles/work.scss';
-import '../styles/normalize.scss';
 import '../styles/navbar.scss';
 import '../styles/social.scss';
 import '../styles/welcome.scss';

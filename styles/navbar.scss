@@ -84,6 +84,16 @@
       margin-right: 40px;
     }
   } 
+  .navigation {
+    height: 32px;
+    position: fixed;
+    top: 90px;
+    width: calc(100% - 60px);
+  }
+  // .svg-cross {
+  //   width: 16px;
+  //   height: 16px;
+  // }
 }   
 @media (max-width: $phone) {
   .navbar {
@@ -94,26 +104,35 @@
     .logo {
       width: 54px;
     }
+
+      
+
+
     .link {
       margin-right: 30px;
+      > div {
+        &::before {
+          bottom: -2px;
+        }
+      }
       a {
         margin-left: 22px;
         font-size: 16px;
       }
     }
+
   }
   .navigation {
-    position: fixed;
     width: calc(100% - 40px);
     top: 80px;
-    height: 20px;
+    height: 30px;
     z-index: 9;
     a {
       font-size: 11px;
     }
   }
-  .svg-cross {
-    width: 14px;
-    height: 14px;
-  }
+  // .svg-cross {
+  //   width: 14px;
+  //   height: 14px;
+  // }
 }
