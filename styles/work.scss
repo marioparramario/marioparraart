@@ -10,7 +10,7 @@
   }
   > div {
     cursor: pointer;
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -35,6 +35,7 @@
     }
   }
   .images {
+    width: 100%;
     img {
       width: 100%;
       margin-top: 16px;
