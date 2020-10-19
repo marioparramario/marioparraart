@@ -24,8 +24,8 @@ export const AboutIntro = () => (
     <motion.div
       variants={reallySimple}
       className="about-intro-text">
-      <h1>Hello There!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <h1>Hey!</h1>
+      <p>So, this is the section where the artist tells you their origin story.<br/>I guess I could tell you that I'm drawing since I can hold a pen, and the difficulties I've had to overcome, but I rather skip this part since at this point it's become some sort of generic template.<br/>For several reasons, I dropped out halfway through industrial design to start my journey as an audidact graphic designer instead. However, I never really stopped drawing.<br/>At some point I realized that I could make a living out of what I loved the most, and I have been making illustrations since then.<br/>It took my a while to embrace this path and I don't necesarely regret the detour, because ultimately, being a designer has deeply permeated into my work. At the end of the day, I can't help but thinking in geometrical shapes of color and symplify as much as possible.<br/>Love learning new stuff and keep pushing the boundaries of my creativity.<br/>(Also, amateur cyclist, musician, and a jazz freak).</p>
     </motion.div>
   </motion.div>
 );
