@@ -50,7 +50,8 @@ export const Data = [
     client: "Jovoto / Victorinox",
     year: "2017",
     path: "victorinox",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602518429/Ultimate%20Portfolio/Berlin/thumbnail_townb0.svg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602518429/Ultimate%20Portfolio/Berlin/thumbnail_townb0.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599600738/Ultimate%20Portfolio/Berlin/berlin-thumbnail_j92us5.jpg",
     width: 3,
     height: 2,
     "works": [
@@ -82,7 +83,8 @@ export const Data = [
     client: "Foodora",
     year: "2018",
     path: "foodora",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602518506/Ultimate%20Portfolio/Foodora/foodora-thumbnail_ld7rq9.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599581245/Ultimate%20Portfolio/Foodora/foodora-thumbnail_hjgpsq.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602518506/Ultimate%20Portfolio/Foodora/foodora-thumbnail_ld7rq9.svg",
     width: 1,
     height: 1,
     "works": [
@@ -158,7 +160,8 @@ export const Data = [
     client: "Inpact Media",
     year: "2018",
     path: "innovation",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602518788/Ultimate%20Portfolio/Innovation/innovation-thumbnail_zchv8u.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599583092/Ultimate%20Portfolio/Innovation/innovation-thumbnail_qtyfl6.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602518788/Ultimate%20Portfolio/Innovation/innovation-thumbnail_zchv8u.svg",
     width: 25,
     height: 18,
     "works": [
@@ -190,7 +193,8 @@ export const Data = [
     client: "Personal",
     year: "2019",
     path: "chile-calling",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602518852/Ultimate%20Portfolio/Chile%20Calling/chile-calling-thumbnail_rosdtd.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599600523/Ultimate%20Portfolio/Chile%20Calling/chile-calling-thumbnail_pj1wpz.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602518852/Ultimate%20Portfolio/Chile%20Calling/chile-calling-thumbnail_rosdtd.svg",
     width: 4,
     height: 3,
     "works": [
@@ -218,7 +222,8 @@ export const Data = [
     client: "Delivery Hero",
     year: "2019",
     path: "delivery-hero",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602519635/Ultimate%20Portfolio/Delivery%20Hero/delivery-hero-thumbnail_qt2wli.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1597624392/New%20Portdolio/delivery-hero-00_drey0p.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602519635/Ultimate%20Portfolio/Delivery%20Hero/delivery-hero-thumbnail_qt2wli.svg",
     width: 6,
     height: 5,
     "works": [
@@ -280,7 +285,8 @@ export const Data = [
     client: "Inpact Media",
     year: "2017",
     path: "risk-management",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602519917/Ultimate%20Portfolio/Risk/risk-thumbnail_opl5bs.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599596109/Ultimate%20Portfolio/Risk/risk-thumbnail_fdem7f.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602519917/Ultimate%20Portfolio/Risk/risk-thumbnail_opl5bs.svg",
     width: 7,
     height: 5,
     "works": [
@@ -308,7 +314,8 @@ export const Data = [
     client: "Handelsblatt",
     year: "2018",
     path: "handelsblatt",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602520012/Ultimate%20Portfolio/Handelsblatt/handelsblatt-thumbnail_rwomc5.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599582473/Ultimate%20Portfolio/Handelsblatt/handelsblatt-thumbnail_wyprmj.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602520012/Ultimate%20Portfolio/Handelsblatt/handelsblatt-thumbnail_rwomc5.svg",
     width: 5,
     height: 4,
     "works": [
@@ -332,7 +339,8 @@ export const Data = [
     client: "Inpact Media",
     year: "2017",
     path: "ecomony",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602520579/Ultimate%20Portfolio/Economy/economy-thumbnail_avancj.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599597613/Ultimate%20Portfolio/Economy/economy-thumbnail_mjob1d.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602520579/Ultimate%20Portfolio/Economy/economy-thumbnail_avancj.svg",
     width: 7,
     height: 6,
     "works": [
@@ -370,7 +378,8 @@ export const Data = [
     client: "Inpact Media",
     year: "2017",
     path: "risk-management-2",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602521002/Ultimate%20Portfolio/Risk%20II/risk-2-thumbnail_h3akbw.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599591694/Ultimate%20Portfolio/Risk%20II/risk-2-thumbnail_m7yiyc.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602521002/Ultimate%20Portfolio/Risk%20II/risk-2-thumbnail_h3akbw.svg",
     width: 7,
     height: 5,
     "works": [
@@ -410,7 +419,8 @@ export const Data = [
     client: "Personal",
     year: "2016",
     path: "mapuches",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602521058/Ultimate%20Portfolio/Mapuches/mapuches-thumbnail_gdmbmq.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599591055/Ultimate%20Portfolio/Mapuches/mapuches-thumbnail_bamkq9.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602521058/Ultimate%20Portfolio/Mapuches/mapuches-thumbnail_gdmbmq.svg",
     width: 4,
     height: 3,
     "works": [
@@ -446,7 +456,8 @@ export const Data = [
     client: "Inpact Media",
     year: "2018",
     path: "ecomony-2",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602523247/Ultimate%20Portfolio/Economy%20II/economy-2-thumbnail_l3vuam.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599600982/Ultimate%20Portfolio/Economy%20II/economy-2-thumbnail_uyjljg.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602523247/Ultimate%20Portfolio/Economy%20II/economy-2-thumbnail_l3vuam.svg",
     width: 8,
     height: 7,
     "works": [
@@ -548,7 +559,8 @@ export const Data = [
     client: "Inpact Media",
     year: "2019",
     path: "energy",
-    src: "https://res.cloudinary.com/oqdesign/image/upload/v1602521189/Ultimate%20Portfolio/Energy/energy-thumbnail_vamk5f.svg",
+    src: "https://res.cloudinary.com/oqdesign/image/upload/v1599579612/Ultimate%20Portfolio/Energy/energy-thumbnail_vhmzne.jpg",
+    // src: "https://res.cloudinary.com/oqdesign/image/upload/v1602521189/Ultimate%20Portfolio/Energy/energy-thumbnail_vamk5f.svg",
     width: 6,
     height: 5,
     "works": [
