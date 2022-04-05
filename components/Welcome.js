@@ -17,7 +17,7 @@ export const Welcome = () => (
     variants={reallySimple}
     className="text">
       <h1>Hello There!</h1>
-      <h2>I’m Mario Parra, a Chilean illustrator based in Berlin. <br /> I create digital illustrations with a focus on stylized characters built through simple and carefully crafted shapes. This is just a test, ok?</h2>
+      <h2>I’m Mario Parra, a Chilean illustrator based in Berlin. <br /> I create digital illustrations with a focus on stylized characters built through simple and carefully crafted shapes.</h2>
     </motion.div>
 
     <motion.div
