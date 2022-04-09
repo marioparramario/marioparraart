@@ -10,11 +10,12 @@
     "export": "next export"
   },
   "dependencies": {
-    "axios": "^0.20.0",
-    "framer-motion": "latest",
-    "next": "latest",
-    "react": "16.11.0",
-    "react-dom": "16.11.0",
+    "axios": "^0.26.1",
+    "framer-motion": "^6.2.9",
+    "next": "^10.2.3",
+    "prop-types": "^15.8.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-favicon": "0.0.18",
     "react-justified-grid": "^1.0.0",
     "scroll-into-view": "^1.15.0",
@@ -25,6 +26,6 @@
     "@babel/preset-env": "^7.11.5",
     "jest": "^26.4.2",
     "sass": "^1.26.11",
-    "stubby": "^5.0.0"
+    "stubby": "^0.1.40"
   }
 }
